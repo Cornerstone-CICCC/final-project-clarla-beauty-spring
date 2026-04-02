@@ -1,0 +1,12 @@
+{
+  "name": "clarla-beauty-spring",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "format": "prettier --write \"**/*.{html,css,scss,js,json,md}\"",
+    "format:check": "prettier --check \"**/*.{html,css,scss,js,json,md}\""
+  },
+  "devDependencies": {
+    "prettier": "^3.6.2"
+  }
+}
