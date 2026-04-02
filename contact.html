@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BC Beauty - Professional Makeup & Hairstyle Artist</title>
+    <meta
+      name="description"
+      content="Professional makeup artist and hairstylist specializing in weddings, parties, photoshoots, and beauty education."
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <!-- Header will be loaded here -->
+    <div id="header"></div>
+
+    <!-- Title Section -->
+    <section class="title-section">
+      <div class="container">
+        <h2 class="section-title section-title--center">Contact</h2>
+        <p class="section-description">
+          Get a quote and book a free consultation for your special day or our academy services
+        </p>
+      </div>
+      <div>
+        <ul>
+          <li>
+            <img src="images/icons/ph_phone.svg" alt="Phone" />
+            <p>+1 0000000000</p>
+          </li>
+          <li>
+            <img src="images/icons/ic_baseline-whatsapp.svg" alt="WhatsApp" />
+            <p>+1 0000000000</p>
+          </li>
+          <li>
+            <img src="images/icons/iconoir_instagram.svg" alt="Instagram" />
+            <p>carlabeatrizs_</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+
+
+        <form class="contact-form" id="contactForm">
+          <div class="form-tabs">
+            <button type="button" class="form-tab active" data-tab="services">Services</button>
+            <button type="button" class="form-tab" data-tab="classes">Classes</button>
+          </div>
+
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="eventType">Event Type</label>
+              <select id="eventType" name="eventType" required>
+                <option value="">Select Event Type</option>
+                <option value="wedding">Wedding</option>
+                <option value="party">Party</option>
+                <option value="photoshoot">Photoshoot</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="country">Country</label>
+              <select id="country" name="country" required>
+                <option value="">Select Country</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="city">City</label>
+              <input type="text" id="city" name="city" placeholder="Enter your city" required />
+            </div>
+
+            <div class="form-group">
+              <label for="eventDate">Event Date</label>
+              <input type="date" id="eventDate" name="eventDate" required />
+            </div>
+
+            <div class="form-group">
+              <label for="eventTime">Event Time</label>
+              <input type="time" id="eventTime" name="eventTime" required />
+            </div>
+
+            <div class="form-group">
+              <label for="location">Location</label>
+              <input
+                type="text"
+                id="location"
+                name="location"
+                placeholder="Event location"
+                required
+              />
+            </div>
+
+            <div class="form-group form-group--full">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your full name" required />
+            </div>
+
+            <div class="form-group form-group--full">
+              <label for="contact">Contact</label>
+              <input
+                type="text"
+                id="contact"
+                name="contact"
+                placeholder="Email or phone number"
+                required
+              />
+            </div>
+
+            <div class="form-group form-group--full">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                placeholder="Tell me about your vision..."
+              ></textarea>
+            </div>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn--primary">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer will be loaded here -->
+    <div id="footer"></div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
