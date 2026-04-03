@@ -21,8 +21,29 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <!-- Header will be loaded here -->
-    <div id="header"></div>
+    <!-- header -->
+     <!-- it can be component -->
+    <header class="header">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li>|</li>
+        <li><a href="my-work.html">My Work</a></li>
+        <li>|</li>
+        <li><a href="services.html">Services</a></li>
+        <li>|</li>
+        <li><a href="classes_overview.html">Classes</a></li>
+        <li><img src="images/logo/logo.svg" alt="logo" /></li>
+        <li><a href="beauty-tips.html">Beauty Tips</a></li>
+        <li>|</li>
+        <li><a href="about.html">About</a></li>
+        <li>|</li>
+        <li><a href="contact.html">Contact</a></li>
+        <li>|</li>
+        <li>
+          <a href="#"><img src="images/icons/iconoir_instagram.svg" alt="instagram" /></a>
+        </li>
+      </ul>
+    </header>
 
     <!-- Title Section -->
     <section class="title-section">
@@ -50,11 +71,125 @@
       </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contact Section (to PAT: all classes I copy from homepage, i don't know if you want to keep them)-->
+    <section class="contact" id="contact">
 
 
-    <!-- Footer will be loaded here -->
-    <div id="footer"></div>
+        <form class="contact-form" id="contactForm">
+          <div class="form-tabs">
+            <button type="button" class="form-tab active" data-tab="services">Services</button>
+            <button type="button" class="form-tab" data-tab="classes">Classes</button>
+          </div>
+
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="eventType">Event Type</label>
+              <select id="eventType" name="eventType" required>
+                <option value="">Select Event Type</option>
+                <option value="wedding">Wedding</option>
+                <option value="party">Party</option>
+                <option value="photoshoot">Photoshoot</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="country">Country</label>
+              <select id="country" name="country" required>
+                <option value="">Select Country</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="city">City</label>
+              <input type="text" id="city" name="city" placeholder="Enter your city" required />
+            </div>
+
+            <div class="form-group">
+              <label for="eventDate">Event Date</label>
+              <input type="date" id="eventDate" name="eventDate" required />
+            </div>
+
+            <div class="form-group">
+              <label for="eventTime">Event Time</label>
+              <input type="time" id="eventTime" name="eventTime" required />
+            </div>
+
+            <div class="form-group">
+              <label for="location">Location</label>
+              <input
+                type="text"
+                id="location"
+                name="location"
+                placeholder="Event location"
+                required
+              />
+            </div>
+
+            <div class="form-group form-group--full">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your full name" required />
+            </div>
+
+            <div class="form-group form-group--full">
+              <label for="contact">Contact</label>
+              <input
+                type="text"
+                id="contact"
+                name="contact"
+                placeholder="Email or phone number"
+                required
+              />
+            </div>
+
+            <div class="form-group form-group--full">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                placeholder="Tell me about your vision..."
+              ></textarea>
+            </div>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn--primary">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- it can be component -->
+    <!-- Footer -->
+    <div class="footer">
+      <div>
+        <img src="images/logo/logo.svg" alt="logo" />
+        <caption>
+          Expert Makeup and Hairstyle Studio
+        </caption>
+        <div>
+          <a href="tel:+"><img src="images/icons/ph_phone.svg" alt="phone" /></a>
+          <a href="#"><img src="images/icons/ic_baseline-whatsapp.svg" alt="whatsapp" /></a>
+          <a href="#"><img src="images/icons/iconoir_instagram.svg" alt="instagram" /></a>
+        </div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="my-work.html">My Work</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="classes_overview.html">Classes</a></li>
+        <li><a href="beauty-tips.html">Beauty Tips</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <caption>
+        Copyright 2024, Carla Beauty
+      </caption>
+    </div>
 
     <!-- Scripts -->
     <script src="js/main.js"></script>
