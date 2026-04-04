@@ -81,7 +81,7 @@
         <img src="images/icons/arrow-back.svg" alt="Back" />
         <a href="contact.html">Back</a>
       </div>
-      <form action="#" method="post">
+      <form action="contact_service-wedding-booked.html" method="get" data-wedding-form>
         <div>
           <h5>Bridal Service</h5>
           <input type="button" value="Makeup" />
@@ -146,14 +146,16 @@
                 type="number"
                 id="groom-count"
                 name="groomCount"
-                value="1"
+                value="0"
                 min="0"
-                max="1000"
+                max="20"
               />
               <div class="input-group-button">
                 <span class="input-number-increment">+</span>
               </div>
             </div>
+            <input type="checkbox" name="groomHairstyle" id="groom-hairstyle" />
+            <label for="groom-hairstyle">Hairstyle</label>
             <input type="checkbox" name="groomMakeup" id="groom-makeup" />
             <label for="groom-makeup">Makeup</label>
           </div>
@@ -170,9 +172,9 @@
                 type="number"
                 id="bridesmaid-count"
                 name="bridesmaidCount"
-                value="1"
+                value="0"
                 min="0"
-                max="1000"
+                max="20"
               />
               <div class="input-group-button">
                 <span class="input-number-increment">+</span>
@@ -196,9 +198,9 @@
                 type="number"
                 id="flower-girl-count"
                 name="flowerGirlCount"
-                value="1"
+                value="0"
                 min="0"
-                max="1000"
+                max="20"
               />
               <div class="input-group-button">
                 <span class="input-number-increment">+</span>
@@ -272,29 +274,14 @@
   }
 }
 
-Use this for js
-$('.input-number-increment').click(function() {
-  var $input = $(this).parents('.input-number-group').find('.input-number');
-  var val = parseInt($input.val(), 10);
-  $input.val(val + 1);
-});
-
-$('.input-number-decrement').click(function() {
-  var $input = $(this).parents('.input-number-group').find('.input-number');
-  var val = parseInt($input.val(), 10);
-  $input.val(val - 1);
-})
-
  -->
         </div>
         <div>
           <h5>Anything you want us to know?</h5>
-          <textarea name="anything-else" id="anything-else" cols="30" rows="10">
-Your message</textarea
-          >
+          <textarea name="anything-else" id="anything-else" cols="30" rows="10"></textarea>
         </div>
 
-        <button type="submit">Submit</button>
+        <button type="submit">Book Now</button>
       </form>
     </section>
 
@@ -323,6 +310,6 @@ Your message</textarea
     </div>
 
     <!-- Scripts -->
-    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
   </body>
 </html>
