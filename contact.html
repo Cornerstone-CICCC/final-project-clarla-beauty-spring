@@ -71,9 +71,13 @@
       </div>
     </section>
 
-    <!-- Contact Section (I copied this section from homepage)-->
+    <!-- Contact Section -->
     <section id="contact-form">
-      <div>
+      <div class="contact-tab">
+        <a href="contact_service-wedding.html">Services</a>
+        <a href="contact_classes.html">Classes</a>
+      </div>
+      <form action="#" method="post">
         <div id="eventType">
           <h5>Event Type</h5>
           <input type="button" value="Wedding" />
@@ -91,7 +95,7 @@
         </div>
         <div>
           <h5>Event Time</h5>
-          <input type="time" name="" id="" />
+          <input type="time" name="event-time" id="event-time" />
           <div>
             <input type="checkbox" name="notDecidedTime" id="notDecidedTime" />
             <label for="notDecidedTime">Not decided</label>
@@ -100,66 +104,63 @@
 
         <div>
           <h5>Name</h5>
-          <input type="text" name="name" id="name" />
+          <input type="text" name="name" id="name" placeholder="Your name" />
         </div>
 
         <div>
           <h5>Contact</h5>
           <!-- call -->
-          <div>
-            <input type="radio" name="" id="" />
-            <label for="call">Call</label>
-            <!-- need js for selecting country -->
-            <input type="tel" name="" id="" />
-          </div>
+
+          <input type="radio" name="contactMethod" id="contact-call" value="call" />
+          <label for="contact-call">Call</label>
+          <!-- need js for selecting country -->
+          <input type="tel" name="callNumber" id="call-number" placeholder="Your mobile number" />
 
           <!-- whatsapp -->
-          <div>
-            <input type="radio" name="" id="whatsapp" />
-            <label for="whatsapp">WhatsApp</label>
-            <!-- need js for selecting country -->
-            <input type="tel" name="" id="" />
-          </div>
+
+          <input type="radio" name="contactMethod" id="contact-whatsapp" value="whatsapp" />
+          <label for="contact-whatsapp">WhatsApp</label>
+          <!-- need js for selecting country -->
+          <input
+            type="tel"
+            name="whatsappNumber"
+            id="whatsapp-number"
+            placeholder="Your mobile number"
+          />
 
           <!-- sms -->
-          <div>
-            <input type="radio" name="" id="sms" />
-            <label for="sms">SMS</label>
-            <!-- need js for selecting country -->
-            <input type="tel" name="" id="" />
-          </div>
+
+          <input type="radio" name="contactMethod" id="contact-sms" value="sms" />
+          <label for="contact-sms">SMS</label>
+          <!-- need js for selecting country -->
+          <input type="tel" name="smsNumber" id="sms-number" placeholder="Your mobile number" />
 
           <!-- email -->
-          <div>
-            <input type="radio" name="" id="email" />
-            <label for="email">Email</label>
-            <input type="email" name="" id="" />
-          </div>
+
+          <input type="radio" name="contactMethod" id="contact-email" value="email" />
+          <label for="contact-email">Email</label>
+          <input type="email" name="emailAddress" id="email-address" placeholder="Your email" />
         </div>
         <div>
           <h5>When do you want us to call?</h5>
-          <div>
-            <input type="radio" name="callTime" id="anytime" />
-            <label for="anytime">I don't mind</label>
-          </div>
-          <div>
-            <input type="radio" name="callTime" id="morning" />
-            <label for="morning">Morning</label>
-          </div>
-          <div>
-            <input type="radio" name="callTime" id="afternoon" />
-            <label for="afternoon">Afternoon</label>
-          </div>
-          <div>
-            <input type="radio" name="callTime" id="evening" />
-            <label for="evening">Evening</label>
-          </div>
+
+          <input type="radio" name="callTime" id="anytime" />
+          <label for="anytime">I don't mind</label>
+
+          <input type="radio" name="callTime" id="morning" />
+          <label for="morning">Morning</label>
+
+          <input type="radio" name="callTime" id="afternoon" />
+          <label for="afternoon">Afternoon</label>
+
+          <input type="radio" name="callTime" id="evening" />
+          <label for="evening">Evening</label>
         </div>
 
         <!-- buttons -->
         <a href="contact_service-wedding.html">Next (Wedding)</a>
         <a href="contact_service-party.html">Next (Party)</a>
-      </div>
+      </form>
     </section>
 
     <!-- it can be component -->
@@ -167,9 +168,7 @@
     <div class="footer">
       <div>
         <img src="images/logo/logo.svg" alt="logo" />
-        <caption>
-          Expert Makeup and Hairstyle Studio
-        </caption>
+        <p>Expert Makeup and Hairstyle Studio</p>
         <div>
           <a href="tel:+"><img src="images/icons/ph_phone.svg" alt="phone" /></a>
           <a href="#"><img src="images/icons/ic_baseline-whatsapp.svg" alt="whatsapp" /></a>
@@ -185,9 +184,7 @@
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
-      <caption>
-        Copyright 2024, Carla Beauty
-      </caption>
+      <p>Copyright 2024, Carla Beauty</p>
     </div>
 
     <!-- Scripts -->
