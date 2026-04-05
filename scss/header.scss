@@ -13,12 +13,24 @@
 .header {
   background-color: var(--bg-color);
   display: flex;
-  width: 100vw;
+  width: 100%;
   padding: 0;
   justify-content: center;
   align-items: center;
-  position: sticky;
+  position: fixed;
+  left: 0;
   top: 0;
+  z-index: 1000;
+  transition: all 0.3s;
+
+  &.scrolled {
+    opacity: 0.8;
+    background: var(--bg-color);
+
+    .nav-links {
+      padding: 20px 0;
+    }
+  }
 
   .nav-mobile {
     display: none;
@@ -33,10 +45,15 @@
     gap: 80px;
 
     .desktop-logo {
-      width: 132px;
-      height: 132px;
+      width: 126px;
+      height: auto;
       object-fit: contain;
       flex-shrink: 0;
+      content: url(../images/logo/logo.svg);
+    }
+
+    .desktop-logo.scroll-logo {
+      content: url(../images/logo/logo-scroll.svg);
     }
 
     .nav-divider {
