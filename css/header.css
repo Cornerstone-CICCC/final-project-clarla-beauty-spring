@@ -1,0 +1,123 @@
+:root {
+  --text-color: #725a58;
+  --bg-color: #f8f6f4;
+  --accent-color: #e3b6b1;
+  --font-family: 'baskerville', serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.header {
+  background-color: var(--bg-color);
+  display: flex;
+  width: 100vw;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+.header .nav-mobile {
+  display: none;
+}
+.header .nav-links {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 32px;
+  gap: 80px;
+}
+.header .nav-links .desktop-logo {
+  width: 132px;
+  height: 132px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  flex-shrink: 0;
+}
+.header .nav-links .nav-divider {
+  display: flex;
+  width: 100%;
+  max-width: 460px;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .nav-links .nav-divider hr {
+  width: 1px;
+  height: 20px;
+  background-color: var(--accent-color);
+  border: none;
+}
+.header .nav-links .nav-divider a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-family: var(--font-family);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.header .nav-links .nav-divider a:hover {
+  color: var(--accent-color);
+}
+.header .nav-links .nav-divider a[aria-current=page], .header .nav-links .nav-divider a.is-current {
+  color: var(--text-color);
+  text-decoration: underline;
+}
+.header .nav-links .nav-divider a.ig-icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url("/images/icons/iconoir_instagram.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.header .nav-links .nav-divider a.ig-icon:hover {
+  background-image: url(/images/icons/iconoir_instagram-hover.svg);
+}
+
+@media (max-width: 768px) {
+  .header {
+    display: flex;
+    height: 120px;
+    padding: 4px 16px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header .nav-links {
+    display: none;
+  }
+  .header .nav-mobile {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header .nav-mobile .hamburger-icon {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+  }
+  .header .nav-mobile > img {
+    width: 100px;
+    height: 100px;
+  }
+  .header .nav-mobile .ig-icon-mobile {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url("/images/icons/iconoir_instagram.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-shrink: 0;
+  }
+  .header .nav-mobile .ig-icon-mobile:hover {
+    background-image: url(/images/icons/iconoir_instagram-hover.svg);
+  }
+}/*# sourceMappingURL=header.css.map */

@@ -1,0 +1,139 @@
+:root {
+  --text-color: #725a58;
+  --bg-color: #f8f6f4;
+  --accent-color: #e3b6b1;
+  --font-family: 'baskerville', serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.header {
+  background-color: var(--bg-color);
+  display: flex;
+  width: 100vw;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+
+  .nav-mobile {
+    display: none;
+  }
+  .nav-links {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 32px;
+    gap: 80px;
+
+    .desktop-logo {
+      width: 132px;
+      height: 132px;
+      object-fit: contain;
+      flex-shrink: 0;
+    }
+
+    .nav-divider {
+      display: flex;
+      width: 100%;
+      max-width: 460px;
+      justify-content: space-between;
+      align-items: center;
+      //   flex-shrink: 0;
+
+      hr {
+        width: 1px;
+        height: 20px;
+        background-color: var(--accent-color);
+        border: none;
+      }
+
+      a {
+        text-decoration: none;
+        color: var(--text-color);
+        font-family: var(--font-family);
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+
+        &:hover {
+          color: var(--accent-color);
+        }
+
+        &[aria-current='page'],
+        &.is-current {
+          color: var(--text-color);
+          text-decoration: underline;
+        }
+
+        &.ig-icon {
+          display: inline-block;
+          width: 24px;
+          height: 24px;
+          background-image: url('/images/icons/iconoir_instagram.svg');
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+
+          &:hover {
+            background-image: url(/images/icons/iconoir_instagram-hover.svg);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    display: flex;
+    height: 120px;
+    padding: 4px 16px;
+    justify-content: space-between;
+    align-items: center;
+
+    .nav-links {
+      display: none;
+    }
+
+    .nav-mobile {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+
+      .hamburger-icon {
+        width: 40px;
+        height: 40px;
+        flex-shrink: 0;
+      }
+
+      > img {
+        width: 100px;
+        height: 100px;
+      }
+
+      .ig-icon-mobile {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        background-image: url('/images/icons/iconoir_instagram.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        flex-shrink: 0;
+
+        &:hover {
+          background-image: url(/images/icons/iconoir_instagram-hover.svg);
+        }
+      }
+    }
+  }
+}
