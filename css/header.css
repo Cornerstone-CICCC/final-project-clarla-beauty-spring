@@ -67,6 +67,8 @@
 .header .nav-links .nav-divider a[aria-current=page], .header .nav-links .nav-divider a.is-current {
   color: var(--text-color);
   text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
 }
 .header .nav-links .nav-divider a.ig-icon {
   display: inline-block;
