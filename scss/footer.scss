@@ -1,0 +1,21 @@
+footer {
+  background: $color-dark;
+  color: white;
+  padding: $space-xl 0;
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: $space-l;
+  }
+
+  a {
+    color: white;
+    opacity: 0.8;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

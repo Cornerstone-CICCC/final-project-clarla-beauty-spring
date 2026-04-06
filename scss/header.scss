@@ -1,0 +1,26 @@
+header {
+  width: 100%;
+  padding: $space-m $space-l;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
+  nav ul {
+    display: flex;
+    gap: $space-l;
+    list-style: none;
+  }
+
+  a {
+    font-weight: 500;
+    transition: 0.2s;
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.btn {
+  padding: 14px 28px;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+
+  &--primary {
+    background: $color-primary;
+    color: white;
+
+    &:hover {
+      opacity: 0.85;
+    }
+  }
+
+  &--outline {
+    border: 2px solid $color-primary;
+    color: $color-primary;
+
+    &:hover {
+      background: $color-primary;
+      color: white;
+    }
+  }
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
