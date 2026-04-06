@@ -40,17 +40,6 @@
         <h1 class="hero__title">Carla Beauty</h1>
         <p class=".t-body">Vancouver's go-to makeup and hairstyle, with a Brazilian twist</p>
         <a href="#contact" class="btn btn--outline">Free Consultation</a>
-    <!-- IG part and scroll 
-        <div class="hero__ig">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
-          <span>carlabeatrizs_</span>
-        </div>
-      </div>
-      <div class="hero__scroll">
-        <span>Scroll</span>
-        <div class="hero__scroll-line"></div>
-      </div>
-      -->
     </section>
 
     <!-- ABOUT -->
@@ -100,8 +89,8 @@
     <!-- YOU ARE A STAR + GALLERY -->
     <section class="star" id="work">
       <div class="star__text-wrap">
-        <h1 class="star__heading">YOU ARE A STAR</h1>
-        <div class="brands__line"></div><br>
+        <h2 class="star__heading">YOU ARE A STAR</h2>
+        <div class="star__line"></div>
         <p class="star__desc">Shine effortlessly, embrace your unique features with absolute confidence.</p>
         <br>
         <a href="my-work.html" class="btn btn--primary">My Work</a>
@@ -110,7 +99,7 @@
         <div class="gallery__item">
           <img src="images/homepage/gallery1.jpg" alt="Work 1" />
         </div>
-        <div class="gallery__item gallery__item--light">
+        <div class="gallery__item">
           <img src="images/homepage/gallery2.jpg" alt="Work 2" />
         </div>
         <div class="gallery__item">
@@ -126,7 +115,7 @@
 <section class="testimonials">
   <div class="testimonials__inner">
     <div class="testimonials__content">
-      <span class="testimonials__icon">"</span>
+      <img src="images/homepage/quotation.png" alt="Quotation" />
       <blockquote class="testimonials__quote">
         Carla is the best! She made me the night's brightest star! She stayed with me the whole wedding ensuring I always look perfect. 10/10 would recommend!
       </blockquote>
@@ -143,33 +132,38 @@
     <section class="services" id="services">
     <!--Reusing the "star section"-->
       <div class="star__text-wrap">
-        <h1 class="star__heading">Makeup &amp; hairstyle</h1>
-        <div class="brands__line"></div><br>
+        <h2 class="star__heading">MAKEUP &amp; <br>HAIRSTYLE</h2>
+        <div class="star__line"></div>
         <p class="star__desc">We offer fully customizable plan to meet your unique requirements.</p>
         <br>
         <a href="contact.html" class="btn btn--primary">Get a Quote</a>
       </div>
 
     <div class="services__photos">
+
       <div class="services__photo-item services__photo-item--left">
         <img src="images/homepage/makeup1.png" alt="Party" />
         <span class="services__photo-label">
           <span class="services__photo-label--first">P</span>arty
         </span>
       </div>
+
       <div class="services__photo-item services__photo-item--center">
         <img src="images/homepage/makeup2.png" alt="Wedding" />
         <span class="services__photo-label">
           <span class="services__photo-label--first">W</span>edding
         </span>
       </div>
+
       <div class="services__photo-item services__photo-item--right">
         <img src="images/homepage/makeup3.png" alt="Photoshoot" />
         <span class="services__photo-label">
           <span class="services__photo-label--first">P</span>hotoshoot
         </span>
       </div>
+
     </div>
+
     <!-- CLASSES -->
     <section class="classes" id="classes">
      <!--Reusing the "star section"-->
@@ -178,56 +172,89 @@
       </div>
 
       <div class="classes__inner">
-        <div class="classes__text">
-          <ul class="classes__list">
-            <li>Customize your learning experience to excel in your chosen areas, all at your own pace.</li>
-            <li>Discover popular and practical techniques to apply right away!</li>
-            <li>Learn the basics, practice doing your own makeup and make new friends in the process!</li>
-          </ul>
-          <a href="classes.html" class="btn btn--primary">All Classes</a>
+  <div class="classes__text">
+    <ul class="classes__list">
+      <li>
+        <div class="classes__list-row">
+          <div class="classes__list-content">
+            <div class="classes__list-title">
+              <img src="images/homepage/badge.png" alt="badge" class="classes__badge" />
+              <h2>1-on-1 Master Class</h2>
+            </div>
+            <p>Customize your learning experience to excel in your chosen areas, all at your own pace.</p>
+          </div>
+          <span class="classes__arrow">&#8250;</span>
         </div>
+      </li>
+      <li>
+        <div class="classes__list-row">
+          <div class="classes__list-content">
+            <div class="classes__list-title">
+              <img src="images/homepage/badge.png" alt="badge" class="classes__badge" />
+              <h2>Professional 1-day Workshop</h2>
+            </div>
+            <p>Discover popular and practical techniques to apply right away!</p>
+          </div>
+          <span class="classes__arrow">&#8250;</span>
+        </div>
+      </li>
+      <li>
+        <div class="classes__list-row">
+          <div class="classes__list-content">
+            <div class="classes__list-title">
+              <img src="images/homepage/badge.png" alt="badge" class="classes__badge" />
+              <h2>Self-Makeup Beginner Class</h2>
+            </div>
+            <p>Learn the basics, practice doing your own makeup and make new friends in the process!</p>
+          </div>
+          <span class="classes__arrow">&#8250;</span>
+        </div>
+      </li>
+    </ul>
+    <a href="classes.html" class="btn btn--primary">All Classes</a>
+  </div>
 
-        <div class="classes__images">
-          <img src="images/homepage/makeup.png" alt="Class 1" class="classes__img classes__img--back" />
-          <img src="images/homepage/rectangle.png" alt="Class 2" class="classes__img classes__img--front" />
-        </div>
+  <div class="classes__images">
+    <div class="classes__img-wrap">
+      <img src="images/homepage/makeup.png" alt="Class" class="classes__img" />
+      <div class="classes__img-border"></div>
+    </div>
+  </div>
+</div>
       </div>
     </section>
 
     <!-- BEAUTY TIPS -->
-    <section class="beauty-tips" id="beauty-tips">
-      <div class="beauty-tips__inner">
-        <div class="beauty-tips__header">
-          <h2 class="beauty-tips__heading">DIY Beauty Corner</h2>
-          <div class="beauty-tips__line"></div>
-        </div>
-        <div class="beauty-tips__grid">
-          <div class="beauty-tips__card">
-            <div class="beauty-tips__thumb">
-              <img src="https://s3-alpha-sig.figma.com/img/e70c/ea7f/c859ba61d2f7ff31da6586bee2964266?Expires=1776038400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=oIVH45A5sM8EvUDzHPS5G2GggMGn5DbafGJk0sjKfDi-79DSPgbwm5iDJJiRLdRp6j0ZfCKPcmRXecEbiWc6GqaOug3cpwa0rhDogXmVhI4iZJyRfBH3kmUAPMv-Np5oDpd74TbFrXw4Bd~sAdGd4CJwaIFe7SFWwJ-~Ab3~Z9kaat0TVQ2a7-O4X2qsepGsJpaf5~yKci9RviY8hXs3VbnrIy84Z7RPpDCO2CDW8sS5D5X25DXr77Fqxn93gc~IEz6lVFBGSHCuIG49ekFQEw7aJIUXhDQ6xUe2-jEJtnjYdrnKAegPuukutlNvS3YjpoQGGin35CgvI-5EIG0oxg__" alt="Beauty Tip 1" />
-              <div class="beauty-tips__play">&#9654;</div>
-            </div>
-            <p>&#10024; Make up &#10024; Be a queen in...</p>
-          </div>
-          <div class="beauty-tips__card">
-            <div class="beauty-tips__thumb">
-              <img src="https://s3-alpha-sig.figma.com/img/d878/9888/f80847dbcb600815701ec4a6f6ca7666?Expires=1776038400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=Lx9t5Y9EBTTAO8-QAd6aC9dqYsA~E0fasCF4CaxjnJLdAiWQWtWb2Uh1hDv6dyh3NmS5AkakMba7YVVoSpm3HQe9MdHulI2-cCkvGOaa8i-ISy-OtkG1TyrHMzGSfjEMk-pab7bP6o9-NUMo4SDOdPTPIpdyWDp2qZplL-fz~vcqFUKAXI2roNAEX28yWJsaVFePp4WXp471r~7vxmjyDL0P-BasH7lvVI-jF3FPogi2PnqFE0UWkl1N1IXh35R3jx0XCPtej64ocK17HZPMYIuiVD4Evgn1ZDtits2DHGZ~cwk1QJYhLSbJ-8BqokbqTuMScibS0EA9~lSwE37yJQ__" alt="Beauty Tip 2" />
-              <div class="beauty-tips__play">&#9654;</div>
-            </div>
-            <p>Produce a beautiful bride &#10024;...</p>
-          </div>
-          <div class="beauty-tips__card">
-            <div class="beauty-tips__thumb">
-              <img src="https://s3-alpha-sig.figma.com/img/96fd/76af/8c2f60fed3323de6870330229e1095b9?Expires=1776038400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=OmiJkiAo~j397vp27fALsmQ-Q~ftnJqYQ5OGWS~4NCq1fQp96Tb~gPc9FSyM8POBLS-Ec3~iMngehyZF6ya8dwCAt-JFiWxVJxyCbSd1P7kzGfAXE4Nd7DLsSj5JKfQBmGvjQvnjyNkySpS7ARt1bYBJ434iP10sFzeQ7k~OR7YD6vPyEE1O53tVepRCTxJRlE1arrGVUHGt9bkAiLCnoWiYNu8UdWdR9Aef-juu61Mpx-hC46rRUZHC718z1LyB4wP7Yb2g8gQCJQJFN8xFIP8oTF5n2EvnhTrzrtJKpY2vVSYUb7feZleuiRcwD25tTf8Kj8HyiGPb-Gp6pP4ksQ__" alt="Beauty Tip 3" />
-              <div class="beauty-tips__play">&#9654;</div>
-            </div>
-            <p>How to do stunning hair in 3min</p>
-          </div>
-        </div>
-        <a href="beauty-tips.html" class="btn btn--primary">More Beauty Tips</a>
-      </div>
-    </section>
+<!-- BEAUTY TIPS -->
+<section class="beauty-tips" id="beauty-tips">
+  <div class="beauty-tips__inner">
+    <div class="star__text-wrap">
+      <h2 class="star__heading">DIY Beauty Corner</h2>
+    </div>
+    <div class="beauty-tips__grid">
 
+      <div class="beauty-tips__card">
+        <div class="beauty-tips__thumb">
+          <img src="images/homepage/video1.png" alt="Beauty Tip 1" />
+        </div>
+      </div>
+
+      <div class="beauty-tips__card">
+        <div class="beauty-tips__thumb">
+          <img src="images/homepage/video2.png" alt="Beauty Tip 2" />
+        </div>
+      </div>
+
+      <div class="beauty-tips__card">
+        <div class="beauty-tips__thumb">
+          <img src="images/homepage/video3.png" alt="Beauty Tip 3" />
+        </div>
+      </div>
+
+    </div>
+    <a href="beauty-tips.html" class="btn btn--primary">More Beauty Tips</a>
+  </div>
+</section>  
     <!-- CONTACT -->
     <section class="contact" id="contact">
       <div class="contact__header">
