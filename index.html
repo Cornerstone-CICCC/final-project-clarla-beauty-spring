@@ -14,21 +14,13 @@
   <!-- Main styles (compiled from scss/styles.scss) -->
   <link rel="stylesheet" href="css/styles.css" />
 
-  <!-- HEADER CSS — Add your header stylesheet path here -->
-  <!-- <link rel="stylesheet" href="css/header.css" /> -->
-
-  <!-- FOOTER CSS — Add your footer stylesheet path here -->
-  <!-- <link rel="stylesheet" href="css/footer.css" /> -->
-
+  <!-- Header + Footer styles -->
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/footer.css" />
 </head>
+
 <body>
-
-  <!-- ============================================================
-    HEADER — Add HTML file path here
-    HTML file: includes/header.html
-    CSS file:  css/header.css (link it in <head> above)
-  ============================================================ -->
-
+<div id="header"></div>
 
   <main>
 
@@ -266,15 +258,26 @@
       <!--ADD CONTACT FORM HERE -->
  
   </main>
+<!--FLOAT-SOCIAL-->
+<div id="float-social"></div>
+<!--FOOTER -->
+<div id="footer"></div>
+<!--JS -->
+<script>
+  async function loadComponents() {
+    const header = await fetch("components/header.html").then(res => res.text());
+    const footer = await fetch("components/footer.html").then(res => res.text());
+    const floatSocial = await fetch("float-social.html").then(res => res.text());
 
-  <!-- ============================================================
-    FOOTER — Add HTML file path here
-    HTML file: includes/footer.html
-    CSS file:  css/footer.css (link it in <head> above)
-  ============================================================ -->
+    document.getElementById("header").innerHTML = header;
+    document.getElementById("footer").innerHTML = footer;
+    document.getElementById("float-social").innerHTML = floatSocial;
+  }
 
-  <!--ADD float-social.html link here-->
+  loadComponents();
+</script>
   <!-- Main JS -->
   <script src="js/main.js"></script>
 </body>
+
 </html>
