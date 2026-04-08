@@ -1,0 +1,49 @@
+@use 'variables' as *;
+
+/* Reset */
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.btn {
+  display: inline-block;
+  font-family: $font-heading;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 13px 36px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.btn--primary {
+  color: $dark-brown;
+  border: 1.5px solid $dark-brown;
+
+  &:hover {
+    background: $accent-pink;
+    color: $bg-paper-white;
+  }
+}
+
+.btn--outline {
+  background: transparent;
+  color: $bg-paper-white;
+  border: 1.5px solid $bg-paper-white;
+
+  &:hover {
+    background: rgba($bg-paper-white, 0.12);
+    color: $black;
+  }
+}
+
+.btn--outline-dark {
+  background: transparent;
+  color: $dark-brown;
+  border: 1.5px solid $dark-brown;
+
+  &:hover {
+    background: $bg-light-pink;
+  }
+}

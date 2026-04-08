@@ -46,7 +46,7 @@
   width: 126px;
   height: auto;
   -o-object-fit: contain;
-  object-fit: contain;
+     object-fit: contain;
   flex-shrink: 0;
   content: url(../images/logo/logo.svg);
 }
@@ -78,8 +78,7 @@
 .header .nav-links .nav-divider a:hover {
   color: var(--accent-color);
 }
-.header .nav-links .nav-divider a[aria-current='page'],
-.header .nav-links .nav-divider a.is-current {
+.header .nav-links .nav-divider a[aria-current=page], .header .nav-links .nav-divider a.is-current {
   color: var(--text-color);
   text-decoration: underline;
   text-underline-offset: 3px;
@@ -89,7 +88,7 @@
   display: inline-block;
   width: 24px;
   height: 24px;
-  background-image: url('/images/icons/iconoir_instagram.svg');
+  background-image: url("/images/icons/iconoir_instagram.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -128,7 +127,7 @@
     display: inline-block;
     width: 40px;
     height: 40px;
-    background-image: url('/images/icons/iconoir_instagram.svg');
+    background-image: url("/images/icons/iconoir_instagram.svg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -143,7 +142,7 @@
     display: inline-block;
     width: 40px;
     height: 40px;
-    background-image: url('/images/icons/hamburger.svg');
+    background-image: url("/images/icons/hamburger.svg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -153,7 +152,7 @@
     background-image: url(/images/icons/hamburger-hover.svg);
   }
   .header .nav-mobile .menu-trigger.active {
-    background-image: url('/images/icons/cross-outline.svg');
+    background-image: url("/images/icons/cross-outline.svg");
   }
   .header .nav-overlay {
     display: none;
@@ -168,4 +167,4 @@
   .header .nav-overlay.active {
     display: block;
   }
-} /*# sourceMappingURL=header.css.map */
+}/*# sourceMappingURL=header.css.map */

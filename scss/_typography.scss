@@ -1,0 +1,58 @@
+@use 'variables' as *;
+
+/* Base */
+body {
+  font-family: var(--font-body);
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  font-weight: 100;
+}
+
+h1 {
+  font-size: 80px;
+  line-height: 130px;
+}
+
+h2 {
+  font-size: 68px;
+  line-height: 100px;
+}
+
+h3 {
+  font-size: 48px;
+  line-height: 130px;
+}
+
+h4 {
+  font-size: 36px;
+  line-height: 120px;
+}
+
+h5 {
+  font-size: 32px;
+  line-height: 130px;
+}
+
+h6 {
+  font-size: 24px;
+  line-height: 130px;
+}
+
+/* Paragraph */
+p {
+  font-size: 18px;
+  line-height: 150px;
+  color: $dark-gray;
+}

@@ -8,8 +8,8 @@
 }
 
 @font-face {
-  font-family: 'avenir';
-  src: url('../fonts/Avenir/Avenir Light/Avenir-Light.ttf') format('truetype');
+  font-family: "avenir";
+  src: url("../fonts/Avenir/Avenir Light/Avenir-Light.ttf") format("truetype");
   font-weight: 100;
   font-style: normal;
 }
@@ -52,19 +52,19 @@
   border: none;
   padding: 0;
   background-color: transparent;
-  background: url('../images/icons/cross-outline.svg') no-repeat center;
+  background: url("../images/icons/cross-outline.svg") no-repeat center;
   background-size: contain;
   cursor: pointer;
   z-index: 10000;
 }
 .mobile-menu .container .check-btn:hover {
-  background-image: url('../images/icons/close-hover.svg');
+  background-image: url("../images/icons/close-hover.svg");
 }
 .mobile-menu .container .mobile-logo {
   width: 100px;
   height: 100px;
   -o-object-fit: contain;
-  object-fit: contain;
+     object-fit: contain;
   content: url(../images/logo/logo.svg);
 }
 .mobile-menu .container .mobile-nav-links {
@@ -97,25 +97,25 @@
   height: 24px;
 }
 .mobile-menu .container .social-group a#phone-icon {
-  background: url('../images/icons/ph_phone.svg') no-repeat center;
+  background: url("../images/icons/ph_phone.svg") no-repeat center;
   background-size: contain;
 }
 .mobile-menu .container .social-group a#phone-icon:hover {
-  background-image: url('../images/icons/ph_phone-hover.svg');
+  background-image: url("../images/icons/ph_phone-hover.svg");
 }
 .mobile-menu .container .social-group a#whatsapp-icon {
-  background: url('../images/icons/ic_baseline-whatsapp.svg') no-repeat center;
+  background: url("../images/icons/ic_baseline-whatsapp.svg") no-repeat center;
   background-size: contain;
 }
 .mobile-menu .container .social-group a#whatsapp-icon:hover {
-  background-image: url('../images/icons/ic_baseline-whatsapp-hover.svg');
+  background-image: url("../images/icons/ic_baseline-whatsapp-hover.svg");
 }
 .mobile-menu .container .social-group a#instagram-icon {
-  background: url('../images/icons/iconoir_instagram.svg') no-repeat center;
+  background: url("../images/icons/iconoir_instagram.svg") no-repeat center;
   background-size: contain;
 }
 .mobile-menu .container .social-group a#instagram-icon:hover {
-  background-image: url('../images/icons/iconoir_instagram-hover.svg');
+  background-image: url("../images/icons/iconoir_instagram-hover.svg");
 }
 .mobile-menu .container .footer-tagline {
   font-family: var(--font-body);
@@ -129,4 +129,4 @@
 .mobile-menu.open {
   transform: translateX(0);
   pointer-events: auto;
-} /*# sourceMappingURL=mobile-menu.css.map */
+}/*# sourceMappingURL=mobile-menu.css.map */
