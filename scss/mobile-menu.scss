@@ -20,16 +20,21 @@
 }
 
 .mobile-menu {
-  background-color: var(--bg-color);
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100vh;
+  background: var(--bg-color);
+
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+  pointer-events: none;
+
   z-index: 9999;
 
   .container {
@@ -42,12 +47,15 @@
     height: 100%;
     padding: 24px;
 
-    #closeMenu {
+    .check-btn {
       position: absolute;
       top: 20px;
       left: 20px;
       width: 40px;
       height: 40px;
+      border: none;
+      padding: 0;
+      background-color: transparent;
       background: url('../images/icons/cross-outline.svg') no-repeat center;
       background-size: contain;
       cursor: pointer;
@@ -132,4 +140,9 @@
       margin-bottom: 24px;
     }
   }
+}
+
+.mobile-menu.open {
+  transform: translateX(0);
+  pointer-events: auto;
 }

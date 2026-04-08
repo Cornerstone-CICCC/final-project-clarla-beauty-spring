@@ -1,41 +1,57 @@
-<nav class="header">
-  <!-- Desktop -->
-  <div class="nav-links">
+<header class="header">
+  <nav class="nav-links" aria-label="Main navigation">
     <div class="nav-divider">
       <a href="index.html">Home</a>
       <hr />
       <a href="my-work_makeup.html">My Work</a>
       <hr />
       <a href="services.html">Services</a>
-      <hr />
-      <a href="classes_overview.html">Classes</a>
     </div>
-    <img src="images/logo/logo.svg" alt="logo" class="desktop-logo" />
+
+    <img class="desktop-logo" src="images/logo/logo.svg" alt="CLARLA Beauty logo" />
+
     <div class="nav-divider">
-      <a href="beauty-tips.html">Beauty Tips</a>
+      <a href="classes_overview.html">Classes</a>
       <hr />
       <a href="about.html">About</a>
       <hr />
       <a href="contact.html">Contact</a>
-      <hr />
-      <a
-        href="https://www.instagram.com/carlabeatrizs_/"
-        class="ig-icon"
-        aria-label="Instagram"
-      ></a>
+      <a href="#" class="ig-icon" aria-label="Instagram"></a>
     </div>
-  </div>
+  </nav>
 
-  <!-- Mobile -->
-  <div class="nav-mobile">
-    <a href="#" class="menu-trigger" aria-label="Open menu"
-      ><img src="images/icons/menu.svg" alt="menu" class="hamburger-icon"
-    /></a>
-    <img src="images/logo/logo.svg" alt="logo" />
-    <a
-      href="https://www.instagram.com/carlabeatrizs_/"
-      class="ig-icon-mobile"
-      aria-label="Instagram"
-    ></a>
-  </div>
-</nav>
+  <nav class="nav-mobile" aria-label="Mobile navigation">
+    <button type="button" id="hamburger" class="menu-trigger" aria-label="Toggle menu"></button>
+
+    <img src="images/logo/logo.svg" alt="CLARLA Beauty logo" />
+
+    <a href="#" class="ig-icon-mobile" aria-label="Instagram"></a>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <div class="container">
+        <button type="button" id="closeMenu" class="check-btn" aria-label="Close menu"></button>
+        <img src="images/logo/logo.svg" alt="CLARLA Beauty logo" class="mobile-logo" />
+
+        <div class="mobile-nav-links">
+          <a href="index.html">Home</a>
+          <a href="my-work_makeup.html">My Work</a>
+          <a href="services.html">Services</a>
+          <a href="classes_overview.html">Classes</a>
+          <a href="beauty-tips.html">Beauty Tips</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="social-group">
+          <a href="tel:+" aria-label="Phone" id="phone-icon"></a>
+          <a href="#" aria-label="WhatsApp" id="whatsapp-icon"></a>
+          <a href="#" aria-label="Instagram" id="instagram-icon"></a>
+        </div>
+
+        <p class="footer-tagline">Expert Makeup and Hairstyle Studio</p>
+      </div>
+    </div>
+  </nav>
+
+  <div class="nav-overlay" id="navOverlay"></div>
+</header>
