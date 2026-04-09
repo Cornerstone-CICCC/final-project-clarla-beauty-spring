@@ -171,6 +171,7 @@ p {
   flex-direction: column;
   align-items: flex-start;
   gap: 15px;
+  width: 1024px;
 }
 .title h1 {
   font-family: "Baskerville", serif;
@@ -178,6 +179,7 @@ p {
   font-weight: 100;
   font-style: normal;
   color: #725a58;
+  align-self: center;
 }
 
 .main {
@@ -210,9 +212,15 @@ p {
   width: 373px;
   padding: 24px 24px 40px 24px;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: stretch;
   gap: 40px;
   border: 1px solid #b99692;
+}
+.main .container .left .inner-text > .btn.btn--primary {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  align-self: stretch;
 }
 .main .container .left .inner-text .class-features {
   display: flex;
@@ -280,4 +288,72 @@ p {
   font-family: "Avenir", sans-serif;
   font-size: 18px;
   color: #725a58;
+}
+
+@media (max-width: 768px) {
+  .main .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    padding: 0 20px;
+  }
+  .main .container .left {
+    width: 100%;
+    flex-direction: row;
+    align-items: stretch;
+    margin: 0 auto;
+  }
+  .main .container .left > img {
+    width: 50%;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+    align-self: stretch;
+  }
+  .main .container .left .inner-text {
+    width: 50%;
+    padding: 24px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .main .container .right {
+    width: 100%;
+    max-width: 1024px;
+    flex: none;
+  }
+  .main .container .right .content-unit {
+    width: 100%;
+    max-width: 1024px;
+  }
+}
+@media (max-width: 480px) {
+  .main .container .left {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main .container .left > img {
+    width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+    order: 2;
+  }
+  .main .container .left .inner-text {
+    width: 100%;
+    padding: 24px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    order: 1;
+  }
+  .main .container .right {
+    width: 100%;
+    max-width: none;
+  }
+  .main .container .right .content-unit {
+    width: 100%;
+    max-width: none;
+  }
 }/*# sourceMappingURL=classes.css.map */
