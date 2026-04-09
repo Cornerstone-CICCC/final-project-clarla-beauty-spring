@@ -263,19 +263,35 @@
 <!--FOOTER -->
 <div id="footer"></div>
 <!--JS -->
-<script>
+  <script>
   async function loadComponents() {
     const header = await fetch("components/header.html").then(res => res.text());
     const footer = await fetch("components/footer.html").then(res => res.text());
-    const floatSocial = await fetch("float-social.html").then(res => res.text());
+    const floatSocial = await fetch("components/float-social.html").then(res => res.text());
 
     document.getElementById("header").innerHTML = header;
     document.getElementById("footer").innerHTML = footer;
     document.getElementById("float-social").innerHTML = floatSocial;
-  }
 
-  loadComponents();
-</script>
+// Wait a tiny beat for the DOM to register the new HTML
+setTimeout(() => {
+    const toggle = document.getElementById("floatSocialToggle");
+    const social = document.getElementById("floatSocial");
+
+    if (toggle && social) {
+        social.classList.add("is-open");
+        toggle.addEventListener("click", () => {
+            social.classList.toggle("is-open");
+        });
+    } else {
+        console.error("Float Social elements not found in the DOM.");
+    }
+}, 50);
+    }
+
+
+  loadComponents(); 
+  </script>
   <!-- Main JS -->
   <script src="js/main.js"></script>
 </body>
