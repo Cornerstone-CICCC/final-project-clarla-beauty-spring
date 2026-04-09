@@ -81,8 +81,8 @@ p {
   border: none;
 }
 
-body {
-  margin: 0;
+* {
+  box-sizing: border-box;
 }
 
 .class-overview {
@@ -146,15 +146,35 @@ body {
   color: #191919;
   font-weight: 100;
 }
-.class-unit .class-details h6 {
+.class-unit .class-details .inner-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+.class-unit .class-details .inner-content h6 {
   font-family: "Baskerville", serif;
   font-size: 24px;
   font-weight: 400;
   font-style: normal;
   color: #191919;
 }
-.class-unit .class-details p {
+.class-unit .class-details .inner-content p {
   font-family: "Avenir", sans-serif;
   font-size: 16px;
+  color: #725a58;
+}
+
+.title {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+.title h6 {
+  font-family: "Baskerville", serif;
+  font-size: 80px;
+  font-weight: 100;
+  font-style: normal;
   color: #725a58;
 }/*# sourceMappingURL=classes.css.map */
