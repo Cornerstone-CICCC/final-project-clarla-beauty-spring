@@ -1,0 +1,160 @@
+@font-face {
+  font-family: "Baskerville";
+  src: local("Baskerville"), local("Baskerville Regular");
+  font-style: normal;
+  font-weight: 400;
+}
+body {
+  font-family: "Avenir", sans-serif;
+  color: #535353;
+  background-color: #f8f6f4;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Baskerville", serif;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 80px;
+  line-height: 130%;
+}
+
+h2 {
+  font-size: 68px;
+  line-height: 100%;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 48px;
+  line-height: 130%;
+  font-weight: 100;
+}
+
+h4 {
+  font-size: 36px;
+  line-height: 120%;
+}
+
+h5 {
+  font-size: 32px;
+  line-height: 130%;
+}
+
+h6 {
+  font-size: 24px;
+  line-height: 130%;
+}
+
+/* Paragraph */
+p {
+  font-size: 18px;
+  line-height: 150%;
+  color: #535353;
+}
+
+.section-title {
+  font-family: "Baskerville", serif;
+  color: #5e4a49;
+  text-transform: uppercase;
+}
+
+.section-description {
+  font-family: "Avenir", sans-serif;
+  color: #888888;
+  margin: 0;
+}
+
+.section-divider {
+  width: 200px;
+  height: 1px;
+  background-color: #e3b6b1;
+  border: none;
+}
+
+body {
+  margin: 0;
+}
+
+.class-overview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+  padding: 80px 20px;
+  background-color: #fae9e7;
+}
+
+.class-unit {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 1024px;
+  gap: 40px;
+  padding: 0 20px;
+}
+.class-unit .class-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+.class-unit .class-details img {
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 328px;
+  height: 500px;
+}
+.class-unit .class-details h4 {
+  font-family: "Baskerville", serif;
+  font-size: 36px;
+  font-weight: 400;
+  font-style: normal;
+  color: #725a58;
+  margin: 0;
+}
+.class-unit .class-details .class-features {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 24px;
+}
+.class-unit .class-details .class-features .feature-icon {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 6px;
+}
+.class-unit .class-details .class-features .feature-icon img {
+  width: 24px;
+  height: 24px;
+}
+.class-unit .class-details .class-features .feature-icon p {
+  font-family: "Avenir", sans-serif;
+  font-size: 16px;
+  color: #191919;
+  font-weight: 100;
+}
+.class-unit .class-details h6 {
+  font-family: "Baskerville", serif;
+  font-size: 24px;
+  font-weight: 400;
+  font-style: normal;
+  color: #191919;
+}
+.class-unit .class-details p {
+  font-family: "Avenir", sans-serif;
+  font-size: 16px;
+  color: #725a58;
+}/*# sourceMappingURL=classes.css.map */

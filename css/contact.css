@@ -138,8 +138,7 @@ body {
   min-height: 52px;
   padding: 16px 12px;
   position: relative;
-  -moz-appearance: none;
-       appearance: none;
+  appearance: none;
   -webkit-appearance: none;
   color-scheme: light;
 }
@@ -164,8 +163,7 @@ body {
   color: #888888;
 }
 #contact-form input[type=radio] {
-  -moz-appearance: none;
-       appearance: none;
+  appearance: none;
   -webkit-appearance: none;
   width: 20px;
   height: 20px;
@@ -200,8 +198,7 @@ body {
 #contact-form input[type=checkbox] {
   width: 22px;
   height: 22px;
-  -moz-appearance: none;
-       appearance: none;
+  appearance: none;
   -webkit-appearance: none;
   border: 1px solid #b99692;
   border-radius: 0;
@@ -328,8 +325,7 @@ body {
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: center;
-  -moz-column-gap: 10px;
-       column-gap: 10px;
+  column-gap: 10px;
   row-gap: 8px;
   width: 100%;
 }
@@ -412,8 +408,7 @@ body {
 }
 #contact-form .input-number-group input[type=number]::-webkit-inner-spin-button,
 #contact-form .input-number-group input[type=number]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-          appearance: none;
+  appearance: none;
 }
 #contact-form .input-number-group .input-group-button {
   display: flex;
@@ -446,9 +441,7 @@ body {
 #contact-form .input-number-group .input-number-increment {
   height: 40px;
   border: none;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  user-select: none;
   border-radius: 0;
 }
 #contact-form .input-number-group .input-number-decrement,
@@ -482,14 +475,6 @@ body {
   font-style: normal;
   font-weight: 100;
   line-height: 150%;
-}
-#contact-form #anything-else::-moz-placeholder {
-  font-family: "Avenir", sans-serif;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%;
-  color: #535353;
 }
 #contact-form #anything-else::placeholder {
   font-family: "Avenir", sans-serif;
@@ -634,4 +619,6 @@ body {
 }
 .breadcrumb a:hover {
   color: #e3b6b1;
-}/*# sourceMappingURL=contact.css.map */
+}
+
+/*# sourceMappingURL=contact.css.map */
