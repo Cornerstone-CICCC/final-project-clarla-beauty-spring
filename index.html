@@ -20,10 +20,8 @@
 </head>
 
 <body>
-<div id="header"></div>
-
+  <div id="navbar"></div>
   <main>
-
     <!-- HERO -->
     <section class="hero" id="hero">
       <div class="hero__bg" style="background-image: url('images/homepage/hero_section.png')"></div>
@@ -233,7 +231,6 @@
       </div>
     </section>
 
-    <!-- BEAUTY TIPS -->
 <!-- BEAUTY TIPS -->
 <section class="beauty-tips" id="beauty-tips">
   <div class="beauty-tips__inner">
@@ -275,7 +272,13 @@
       <!--ADD CONTACT FORM HERE -->
  
   </main>
-
+  
+  <script>
+    fetch("components/footer.html")
+      .then(res => res.text())
+      .then(html => { document.getElementById("footer").innerHTML = html; });
+  </script>
+  
   <!-- Main JS -->
   <script src="js/header.js"></script> 
   <script src="js/float-social.js"></script> 
