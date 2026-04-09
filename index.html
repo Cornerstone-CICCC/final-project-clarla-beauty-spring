@@ -276,21 +276,8 @@
  
   </main>
 
-<!--FOOTER -->
-<div id="footer"></div>
-<!--JS -->
-  <script>
-  async function loadComponents() {
-    const header = await fetch("components/header.html").then(res => res.text());
-    const footer = await fetch("components/footer.html").then(res => res.text());
-
-    document.getElementById("header").innerHTML = header;
-    document.getElementById("footer").innerHTML = footer;
-  }
-
-  loadComponents(); 
-  </script>
   <!-- Main JS -->
+  <script src="js/header.js"></script> 
   <script src="js/float-social.js"></script> 
   <script src="js/main.js"></script>
 </body>
