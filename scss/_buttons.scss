@@ -1,0 +1,38 @@
+@import 'variables';
+@import 'typography';
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.btn {
+  font-family: $font-heading;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  display: flex;
+  min-width: 160px;
+  height: 62px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  border-radius: 0px;
+  text-decoration: none;
+
+  &--primary {
+    background: transparent;
+    color: $darkest-brown;
+    border: 0.8px solid $darkest-brown;
+
+    &:hover {
+      background: $dark-pink;
+      color: $bg-pale-white;
+      border: 0.8px solid $dark-pink;
+    }
+  }
+}

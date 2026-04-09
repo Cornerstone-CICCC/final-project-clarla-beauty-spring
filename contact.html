@@ -28,126 +28,131 @@
     <section class="title-section">
       <div class="container">
         <h2 class="section-title section-title--center">Contact</h2>
+        <hr class="section-divider" />
         <p class="section-description">
           Get a quote and book a free consultation for your special day or our academy services
         </p>
       </div>
-      <div>
-        <ul>
-          <li>
-            <img src="images/icons/ph_phone.svg" alt="Phone" />
-            <p>+1 0000000000</p>
-          </li>
-          <li>
-            <img src="images/icons/ic_baseline-whatsapp.svg" alt="WhatsApp" />
-            <p>+1 0000000000</p>
-          </li>
-          <li>
-            <img src="images/icons/iconoir_instagram.svg" alt="Instagram" />
-            <p>carlabeatrizs_</p>
-          </li>
-        </ul>
-      </div>
+    </section>
+    <section class="contact-info">
+      <span class="contact-info-item">
+        <img src="images/icons/ph_phone.svg" alt="Phone" />
+        <span>+1 0000000000</span>
+      </span>
+      <span class="contact-info-item">
+        <img src="images/icons/ic_baseline-whatsapp.svg" alt="WhatsApp" />
+        <span>+1 0000000000</span>
+      </span>
+      <span class="contact-info-item">
+        <img src="images/icons/iconoir_instagram.svg" alt="Instagram" />
+        <span>carlabeatrizs_</span>
+      </span>
     </section>
 
     <!-- Contact Section -->
     <section id="contact-form">
       <div class="contact-tab">
-        <a href="contact_service-wedding.html">Services</a>
+        <a id="tab-current" href="contact_service-wedding.html">Services</a>
         <a href="contact_classes.html">Classes</a>
       </div>
-      <form action="#" method="post">
-        <div id="eventType">
+      <form action="#" method="post" id="service-form">
+        <div id="eventType" class="service-form-item">
           <h5>Event Type</h5>
-          <input type="button" value="Wedding" />
-          <input type="button" value="Party" />
-          <input type="button" value="Photoshoot" />
-          <!-- icon is in /images/icons/ -->
-        </div>
-        <div>
-          <h5>Event Date</h5>
-          <input type="date" id="event-date" name="event-date" />
-          <div>
-            <input type="checkbox" name="notDecided" id="notDecided" />
-            <label for="notDecided">Not decided</label>
+          <div class="service-form-item-options">
+            <input type="button" value="Wedding" class="event-type-btn is-selected" />
+            <input type="button" value="Party" class="event-type-btn" />
+            <input type="button" value="Photoshoot" class="event-type-btn" />
           </div>
         </div>
-        <div>
-          <h5>Event Time</h5>
-          <input type="time" name="event-time" id="event-time" />
-          <div>
-            <input type="checkbox" name="notDecidedTime" id="notDecidedTime" />
-            <label for="notDecidedTime">Not decided</label>
+        <!-- icon is in /images/icons/ -->
+        <div class="two-column">
+          <div id="eventDate" class="service-form-item two-column-item">
+            <h5>Event Date</h5>
+            <input type="date" id="event-date" name="event-date" required />
+            <div>
+              <input type="checkbox" name="notDecided" id="notDecided" />
+              <label for="notDecided">Not decided</label>
+            </div>
+          </div>
+          <div id="eventTime" class="service-form-item two-column-item">
+            <h5>Event Time</h5>
+            <input type="time" name="event-time" id="event-time" required />
+            <div>
+              <input type="checkbox" name="notDecidedTime" id="notDecidedTime" />
+              <label for="notDecidedTime">Not decided</label>
+            </div>
           </div>
         </div>
 
-        <div>
+        <div id="customerName" class="service-form-item">
           <h5>Name</h5>
-          <input type="text" name="name" id="name" placeholder="Your name" />
+          <input type="text" name="name" id="name" placeholder="Your name" required/>
         </div>
 
-        <div>
+        <div id="contactOption" class="service-form-item">
           <h5>Contact</h5>
-          <!-- call -->
+          <div class="contact-option-row">
+            <input type="radio" name="contactMethod" id="contact-call" value="call" checked />
+            <label for="contact-call">Call</label>
+            <input type="tel" name="callNumber" id="call-number" placeholder="Your mobile number" />
+          </div>
 
-          <input type="radio" name="contactMethod" id="contact-call" value="call" />
-          <label for="contact-call">Call</label>
-          <!-- need js for selecting country -->
-          <input type="tel" name="callNumber" id="call-number" placeholder="Your mobile number" />
+          <div class="contact-option-row">
+            <input type="radio" name="contactMethod" id="contact-whatsapp" value="whatsapp" />
+            <label for="contact-whatsapp">WhatsApp</label>
+            <input
+              type="tel"
+              name="whatsappNumber"
+              id="whatsapp-number"
+              placeholder="Your mobile number"
+            />
+          </div>
 
-          <!-- whatsapp -->
+          <div class="contact-option-row">
+            <input type="radio" name="contactMethod" id="contact-sms" value="sms" />
+            <label for="contact-sms">SMS</label>
+            <input type="tel" name="smsNumber" id="sms-number" placeholder="Your mobile number" />
+          </div>
 
-          <input type="radio" name="contactMethod" id="contact-whatsapp" value="whatsapp" />
-          <label for="contact-whatsapp">WhatsApp</label>
-          <!-- need js for selecting country -->
-          <input
-            type="tel"
-            name="whatsappNumber"
-            id="whatsapp-number"
-            placeholder="Your mobile number"
-          />
-
-          <!-- sms -->
-
-          <input type="radio" name="contactMethod" id="contact-sms" value="sms" />
-          <label for="contact-sms">SMS</label>
-          <!-- need js for selecting country -->
-          <input type="tel" name="smsNumber" id="sms-number" placeholder="Your mobile number" />
-
-          <!-- email -->
-
-          <input type="radio" name="contactMethod" id="contact-email" value="email" />
-          <label for="contact-email">Email</label>
-          <input type="email" name="emailAddress" id="email-address" placeholder="Your email" />
+          <div class="contact-option-row">
+            <input type="radio" name="contactMethod" id="contact-email" value="email" />
+            <label for="contact-email">Email</label>
+            <input type="email" name="emailAddress" id="email-address" placeholder="Your email" />
+          </div>
         </div>
-        <div>
+        <div id="callTime" class="service-form-item">
           <h5>When do you want us to call?</h5>
-
-          <input type="radio" name="callTime" id="anytime" />
-          <label for="anytime">I don't mind</label>
-
-          <input type="radio" name="callTime" id="morning" />
-          <label for="morning">Morning</label>
-
-          <input type="radio" name="callTime" id="afternoon" />
-          <label for="afternoon">Afternoon</label>
-
-          <input type="radio" name="callTime" id="evening" />
-          <label for="evening">Evening</label>
+          <div class="radio-row">
+            <input type="radio" name="callTime" id="anytime" />
+            <label for="anytime">I don't mind</label>
+          </div>
+          <div class="radio-row">
+            <input type="radio" name="callTime" id="morning" />
+            <label for="morning">Morning</label>
+          </div>
+          <div class="radio-row">
+            <input type="radio" name="callTime" id="afternoon" />
+            <label for="afternoon">Afternoon</label>
+          </div>
+          <div class="radio-row">
+            <input type="radio" name="callTime" id="evening" />
+            <label for="evening">Evening</label>
+          </div>
         </div>
 
         <!-- buttons -->
-        <a href="contact_service-wedding.html">Next (Wedding)</a>
-        <a href="contact_service-party.html">Next (Party)</a>
+        <button class="btn btn--primary" type="submit" formaction="contact_service-wedding.html">
+          Next
+        </button>
       </form>
     </section>
 
     <!-- Footer -->
-   <div id="footer"></div>
+    <div id="footer"></div>
 
     <!-- Scripts -->
     <script src="js/contact.js"></script>
     <script src="js/header.js"></script>
     <script src="js/footer.js"></script>
-</body>
+  </body>
 </html>
