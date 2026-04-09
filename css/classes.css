@@ -172,6 +172,10 @@ p {
   align-items: flex-start;
   gap: 15px;
   width: 1024px;
+  margin: 0 auto;
+}
+.title .breadcrumb {
+  align-self: flex-start;
 }
 .title h1 {
   font-family: "Baskerville", serif;
@@ -179,7 +183,9 @@ p {
   font-weight: 100;
   font-style: normal;
   color: #725a58;
-  align-self: center;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .main {
@@ -291,6 +297,14 @@ p {
 }
 
 @media (max-width: 768px) {
+  .title {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .title h1 {
+    font-size: 56px;
+    line-height: 115%;
+  }
   .main .container {
     flex-direction: column;
     align-items: center;
@@ -317,6 +331,8 @@ p {
     height: auto;
     display: flex;
     flex-direction: column;
+    align-items: stretch;
+    margin: 0;
   }
   .main .container .right {
     width: 100%;
@@ -329,6 +345,13 @@ p {
   }
 }
 @media (max-width: 480px) {
+  .title {
+    gap: 12px;
+  }
+  .title h1 {
+    font-size: 40px;
+    line-height: 120%;
+  }
   .main .container .left {
     flex-direction: column;
     align-items: center;

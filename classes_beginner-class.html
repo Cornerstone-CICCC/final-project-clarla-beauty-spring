@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BC Beauty - Professional Makeup & Hairstyle Artist</title>
+    <meta
+      name="description"
+      content="Professional makeup artist and hairstylist specializing in weddings, parties, photoshoots, and beauty education."
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <div id="navbar"></div>
+
+    <!-- Title Section -->
+    <section class="title">
+      <div class="breadcrumb" id="breadcrumb">
+        <img src="images/icons/arrow-back.svg" alt="" />
+        <a href="classes_overview.html">All classes</a>
+      </div>
+      <h1>Self-Makeup</h1>
+      <h1>Beginner Class</h1>
+    </section>
+
+    <!-- Main -->
+    <section class="main">
+      <div class="container">
+        <!-- left -->
+        <div class="left">
+          <img src="images/classes/beginner-class.svg" alt="Beginner Class" />
+          <div class="inner-text">
+            <h4>Self-Makeup Beginner Class</h4>
+            <div class="class-features">
+              <div class="feature-icon">
+                <img src="images/icons/dollars.svg" alt="" />
+                <p>CAD 80</p>
+              </div>
+              <div class="feature-icon">
+                <img src="images/icons/clock.svg" alt="" />
+                <p>3 hrs</p>
+              </div>
+              <div class="feature-icon">
+                <img src="images/icons/person.svg" alt="" />
+                <p>Beginner and Enthusiast</p>
+              </div>
+              <div class="feature-icon">
+                <img src="images/icons/brush.svg" alt="" />
+                <p>Tools included</p>
+              </div>
+            </div>
+            <a href="contact_classes.html" class="btn btn--primary">Join Class</a>
+          </div>
+        </div>
+
+        <!-- right -->
+        <div class="right">
+          <!-- overview -->
+          <div class="content-unit">
+            <h4>Overview</h4>
+            <p>
+              Designed for individuals to learn how to apply makeup on themselves effectively. The
+              class will provide fundamental knowledge and hands-on practice to achieve everyday
+              makeup looks with confidence.
+            </p>
+          </div>
+          <!-- curriculum -->
+          <div class="content-unit">
+            <h4>Curriculum</h4>
+            <!-- unit 1 -->
+            <div>
+              <h6>Introduction to Makeup Artistry</h6>
+              <ul>
+                <li>Overview of basic makeup terminology and concepts</li>
+                <li>Understanding different makeup products and their purposes</li>
+              </ul>
+            </div>
+
+            <!-- unit 2 -->
+            <div class="content-unit">
+              <h6>Essential Tools and Products</h6>
+              <ul>
+                <li>Makeup brushes and their uses</li>
+                <li>Understanding different makeup products (foundations, concealers, powders, etc.)</li>
+                <li>Importance of hygiene and sanitization in makeup application</li>
+                <li>Building a professional makeup kit on a budget</li>
+              </ul>
+            </div>
+
+            <!-- unit 3 -->
+            <div class="content-unit">
+              <h6>Preparing the Canvas</h6>
+              <ul>
+                <li>Skincare routine before makeup application (cleansing, moisturizing, sunscreen)</li>
+                <li>Primer application for smoother makeup application</li>
+              </ul>
+            </div>
+
+            <!-- unit 4 -->
+            <div class="content-unit">
+              <h6>Specialized Topics (Choose based on participant's interest)</h6>
+              <ul>
+                <li>Advanced contouring and highlighting techniques</li>
+                <li>Creative eye makeup (smoky eyes, cut crease, etc.)</li>
+                <li>Flawless complexion techniques (perfecting skin texture, color correction)</li>
+                <li>Mastering lip artistry (ombre lips, lip contouring, etc.)</li>
+                <li>Bridal or special occasion makeup</li>
+                <li>Editorial or avant-garde makeup</li>
+              </ul>
+            </div>
+
+            <!-- unit 5 -->
+            <div class="content-unit">
+              <h6>Foundation and Base Makeup Techniques</h6>
+              <ul>
+                <li>Choosing the right foundation shade and formulation</li>
+                <li>Techniques for flawless foundation application (brush, sponge, fingers)</li>
+                <li>Concealing imperfections and correcting skin tone</li>
+                <li>Setting foundation with powders for longevity</li>
+              </ul>
+            </div>
+
+            <!-- unit 6 -->
+            <div class="content-unit">
+              <h6>Enhancing the Eyes</h6>
+              <ul>
+                <li>Basic eyeshadow application techniques for everyday looks</li>
+                <li>Eyeliner application for defining the eyes</li>
+                <li>Mascara application for lengthening and volumizing lashes</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <!-- Header Component -->
+    <script>
+      fetch('../components/header.html')
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById('header').innerHTML = data;
+        });
+    </script>
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+  </body>
+</html>
