@@ -1,0 +1,101 @@
+// ─────────────────────────────────────────────────────────
+// FLOAT-SOCIAL — standalone component styles
+// Requires the parent section to have position: relative
+// ─────────────────────────────────────────────────────────
+
+$fs-btn-size: 48px;
+$fs-ig-color: #c13ed4;
+$fs-phone-color: #6aa2ba;
+$fs-wa-color: #25d366;
+$fs-chat-color: #191919;
+$fs-bottom: 80px;
+$fs-speed: 0.3s;
+
+.float-social {
+  position: absolute;
+  right: 0;
+  bottom: $fs-bottom;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+
+  // ── base button ──────────────────────────────────────
+  &__btn {
+    width: $fs-btn-size;
+    height: $fs-btn-size;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+
+    &:hover {
+      filter: brightness(0.88);
+      transform: translateX(-4px);
+    }
+
+    transition:
+      transform $fs-speed ease,
+      filter $fs-speed ease;
+
+    &--ig {
+      background: $fs-ig-color;
+    }
+    &--phone {
+      background: $fs-phone-color;
+    }
+    &--wa {
+      background: $fs-wa-color;
+    }
+    &--chat {
+      background: $fs-chat-color;
+    }
+  }
+
+  // ── collapsed state (default) ────────────────────────
+  &__btn--ig,
+  &__btn--phone,
+  &__btn--wa {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    pointer-events: none;
+    transform: translateX(#{$fs-btn-size});
+    transition:
+      max-height $fs-speed ease,
+      opacity $fs-speed ease,
+      transform $fs-speed ease;
+  }
+
+  // ── expanded state ───────────────────────────────────
+  &.open {
+    .float-social__btn--ig,
+    .float-social__btn--phone,
+    .float-social__btn--wa {
+      max-height: $fs-btn-size;
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateX(0);
+    }
+
+    .float-social__btn--phone {
+      transition-delay: 0.04s;
+    }
+    .float-social__btn--wa {
+      transition-delay: 0.08s;
+    }
+    .float-social__btn--ig {
+      transition-delay: 0.12s;
+    }
+  }
+
+  // ── chat icon rotates when open ──────────────────────
+  &__btn--chat svg {
+    transition: transform $fs-speed ease;
+  }
+  &.open &__btn--chat svg {
+    transform: rotate(90deg);
+  }
+}
