@@ -23,6 +23,10 @@ body {
   }
 }
 
+.title-section + .contact-info {
+  margin-top: -60px;
+}
+
 // Contact section
 #contact-form {
   display: inline-flex;
@@ -486,6 +490,12 @@ body {
   border: 1px solid $dark-pink;
   color: $dark-brown;
 
+  > img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
   .frame-content {
     width: 100%;
   }
@@ -606,6 +616,144 @@ body {
 
     &:hover {
       color: $accent-pink;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    gap: 32px;
+    max-width: 100vw;
+  }
+
+  .title-section {
+    padding: 0;
+    gap: 0px;
+    margin-bottom: 0;
+  }
+
+  .contact-info {
+    flex-direction: row;
+    gap: 16px;
+    justify-content: center;
+
+    .contact-info-item {
+      gap: 6px;
+
+      > span {
+        display: none;
+      }
+    }
+  }
+
+  .title-section + .contact-info {
+    margin-top: -32px;
+  }
+
+  #contact-form {
+    width: 100%;
+    max-width: 840px;
+    padding: 32px 20px;
+    gap: 32px;
+
+    .contact-tab {
+      a {
+        font-size: 24px;
+      }
+    }
+
+    #service-form {
+      gap: 24px;
+
+      .service-form-item {
+        h5 {
+          font-size: 28px;
+        }
+
+        .service-form-item-options {
+          flex-direction: column;
+          align-items: stretch;
+
+          input[type='button'] {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .two-column {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 20px;
+    }
+
+    .anyone-service {
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: flex-start;
+      height: auto;
+      padding: 16px;
+
+      .anyone-service-divider {
+        display: none;
+      }
+
+      .anyone-service-count,
+      .anyone-service-options {
+        justify-content: space-between;
+      }
+    }
+  }
+
+  .frame {
+    width: 100%;
+    padding: 24px 20px;
+    gap: 24px;
+
+    > img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .two-column {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .share-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+
+    > .btn {
+      order: 1;
+    }
+
+    > .two-column-item {
+      order: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      width: 100%;
+
+      > img {
+        order: 1;
+      }
+
+      .contact-list {
+        order: 2;
+        justify-content: center;
+        align-items: center;
+
+        p {
+          display: none;
+        }
+      }
     }
   }
 }
