@@ -44,11 +44,11 @@
   };
 
   const initMobileMenu = () => {
-    const hamburger = mount.querySelector('#hamburger');
-    const mobileMenu = mount.querySelector('#mobileMenu');
-    const closeMenu = mount.querySelector('#closeMenu');
-    const navOverlay = mount.querySelector('#navOverlay');
-    const mobileLinks = mount.querySelectorAll('.mobile-nav-links a');
+    const hamburger = document.querySelector('#hamburger');
+    const mobileMenu = document.querySelector('#mobileMenu');
+    const closeMenu = document.querySelector('#closeMenu');
+    const navOverlay = document.querySelector('#navOverlay');
+    const mobileLinks = document.querySelectorAll('.mobile-nav-links a');
 
     if (!hamburger || !mobileMenu || !navOverlay) return;
 
@@ -85,24 +85,26 @@
     });
   };
 
+  // ... inside your fetch block in header.js
   fetch('components/header.html')
     .then((response) => {
-      if (!response.ok) {
-        throw new Error('Failed to load header component');
-      }
+      if (!response.ok) throw new Error('Failed to load header');
       return response.text();
     })
     .then((html) => {
       mount.innerHTML = html;
       setCurrentNavLink();
-      initMobileMenu();
       updateHeaderOnScroll();
       syncMountHeight();
+
+      // 🔥 MOVE THIS HERE:
+      initMobileMenu();
     })
-    .catch((error) => {
-      console.error(error);
-    });
+    .catch((error) => console.error(error));
+
+  // Remove the standalone initMobileMenu() call from the bottom of the file
 
   window.addEventListener('scroll', updateHeaderOnScroll, { passive: true });
   window.addEventListener('resize', syncMountHeight);
 })();
+s;

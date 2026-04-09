@@ -1,0 +1,78 @@
+.float-social {
+  position: absolute;
+  right: 0;
+  bottom: 80px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.float-social__btn {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+}
+.float-social__btn:hover {
+  filter: brightness(0.88);
+  transform: translateX(-4px);
+}
+.float-social__btn {
+  transition:
+    transform 0.3s ease,
+    filter 0.3s ease;
+}
+.float-social__btn--ig {
+  background: #c13ed4;
+}
+.float-social__btn--phone {
+  background: #6aa2ba;
+}
+.float-social__btn--wa {
+  background: #25d366;
+}
+.float-social__btn--chat {
+  background: #191919;
+}
+.float-social__btn--ig,
+.float-social__btn--phone,
+.float-social__btn--wa {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  pointer-events: none;
+  transform: translateX(48px);
+  transition:
+    max-height 0.3s ease,
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+.float-social.open .float-social__btn--ig,
+.float-social.open .float-social__btn--phone,
+.float-social.open .float-social__btn--wa {
+  max-height: 48px;
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(0);
+}
+.float-social.open .float-social__btn--phone {
+  transition-delay: 0.04s;
+}
+.float-social.open .float-social__btn--wa {
+  transition-delay: 0.08s;
+}
+.float-social.open .float-social__btn--ig {
+  transition-delay: 0.12s;
+}
+.float-social__btn--chat svg {
+  transition: transform 0.3s ease;
+}
+.float-social.open .float-social__btn--chat svg {
+  transform: rotate(90deg);
+}
+
+/*# sourceMappingURL=float-social.css.map */
