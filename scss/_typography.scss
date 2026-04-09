@@ -1,4 +1,11 @@
-/* Base */
+@import 'variables';
+
+@font-face {
+  font-family: 'Baskerville';
+  src: local('Baskerville'), local('Baskerville Regular');
+  font-style: normal;
+  font-weight: 400;
+}
 
 body {
   font-family: $font-body;
@@ -33,6 +40,7 @@ h2 {
 h3 {
   font-size: 48px;
   line-height: 130%;
+  font-weight: 100;
 }
 
 h4 {

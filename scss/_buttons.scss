@@ -1,4 +1,6 @@
-/* Reset */
+@import 'variables';
+@import 'typography';
+
 button {
   border: none;
   background: none;
@@ -6,42 +8,30 @@ button {
 }
 
 .btn {
-  display: inline-block;
   font-family: $font-heading;
   font-size: 20px;
-  font-weight: 500;
-  padding: 13px 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  display: flex;
+  min-width: 160px;
+  height: 62px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
   cursor: pointer;
   transition: all 0.25s ease;
-}
+  border-radius: 0px;
 
-.btn--primary {
-  color: $dark-brown;
-  border: 1.5px solid $dark-brown;
+  &--primary {
+    background: transparent;
+    color: $darkest-brown;
+    border: 0.8px solid $darkest-brown;
 
-  &:hover {
-    background: $accent-pink;
-    color: $bg-paper-white;
-  }
-}
-
-.btn--outline {
-  background: transparent;
-  color: $bg-paper-white;
-  border: 1.5px solid $bg-paper-white;
-
-  &:hover {
-    background: rgba($bg-paper-white, 0.12);
-    color: $black;
-  }
-}
-
-.btn--outline-dark {
-  background: transparent;
-  color: $dark-brown;
-  border: 1.5px solid $dark-brown;
-
-  &:hover {
-    background: $bg-light-pink;
+    &:hover {
+      background: $dark-pink;
+      color: $bg-pale-white;
+      border: 0.8px solid $dark-pink;
+    }
   }
 }

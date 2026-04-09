@@ -8,6 +8,7 @@ $bg-paper-white: #fbfafa;
 //Brown tones
 $dark-brown: #725a58;
 $darkest-brown: #5e4a49;
+$dark-pink: #b99692;
 
 //Gray tones
 $dark-gray: #535353;
@@ -17,9 +18,6 @@ $black: #191919;
 //accent colors
 $accent-pink: #e3b6b1;
 
-// Compatibility aliases for legacy partials
-$color-primary: $dark-brown;
-
-//fonts
-$font-heading: 'Cormorant Garamond', serif;
-$font-body: 'Montserrat', sans-serif;
+// fonts
+$font-heading: 'Baskerville', serif;
+$font-body: 'Avenir', sans-serif;

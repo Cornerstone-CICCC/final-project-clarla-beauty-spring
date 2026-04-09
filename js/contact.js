@@ -1,4 +1,68 @@
 document.addEventListener('DOMContentLoaded', () => {
+  const eventTypeButtons = document.querySelectorAll('#eventType .event-type-btn');
+  const serviceForm = document.querySelector('#service-form');
+  const nextButton = serviceForm?.querySelector('button[type="submit"]');
+  const isWeddingDetailsForm = Boolean(serviceForm?.matches('form[data-wedding-form]'));
+
+  if (isWeddingDetailsForm && nextButton) {
+    // Keep wedding details submit destination fixed regardless of bridal service toggles.
+    nextButton.setAttribute('formaction', 'contact_service-wedding-booked.html');
+  }
+
+  const updateNextButtonAction = () => {
+    if (!nextButton) {
+      return;
+    }
+
+    const selectedValue = (
+      document.querySelector('#eventType .event-type-btn.is-selected')?.value || ''
+    ).toLowerCase();
+
+    const target =
+      selectedValue === 'wedding' ? 'contact_service-wedding.html' : 'contact_service-party.html';
+
+    nextButton.setAttribute('formaction', target);
+  };
+
+  if (eventTypeButtons.length > 0) {
+    const eventValues = Array.from(eventTypeButtons).map((button) =>
+      (button.value || '').trim().toLowerCase()
+    );
+
+    const isMainServicePicker =
+      eventValues.includes('wedding') &&
+      eventValues.includes('party') &&
+      eventValues.includes('photoshoot');
+
+    let hasSelectedButton = false;
+
+    eventTypeButtons.forEach((button, index) => {
+      const shouldSelect =
+        button.classList.contains('is-selected') || (!hasSelectedButton && index === 0);
+
+      if (shouldSelect) {
+        button.classList.add('is-selected');
+        hasSelectedButton = true;
+      }
+
+      button.addEventListener('click', () => {
+        if (isMainServicePicker) {
+          eventTypeButtons.forEach((item) => item.classList.remove('is-selected'));
+          button.classList.add('is-selected');
+          updateNextButtonAction();
+          return;
+        }
+
+        // Bridal service buttons on wedding page support independent multi-select.
+        button.classList.toggle('is-selected');
+      });
+    });
+
+    if (isMainServicePicker) {
+      updateNextButtonAction();
+    }
+  }
+
   const getStorage = () => {
     try {
       const testKey = '__booking_name_test__';
@@ -302,9 +366,9 @@ document.addEventListener('click', (event) => {
   const currentValue = Number.parseInt(input.value || '0', 10);
   const safeValue = Number.isNaN(currentValue) ? 0 : currentValue;
   const min = Number.parseInt(input.min || '0', 10);
-  const max = Number.parseInt(input.max || '20', 10);
+  const max = Number.parseInt(input.max || '5', 10);
   const minValue = Number.isNaN(min) ? 0 : min;
-  const maxValue = Number.isNaN(max) ? 20 : max;
+  const maxValue = Number.isNaN(max) ? 5 : max;
 
   if (incrementBtn) {
     input.value = String(Math.min(safeValue + 1, maxValue));
