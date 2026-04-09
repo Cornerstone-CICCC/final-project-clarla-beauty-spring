@@ -889,7 +889,7 @@ button {
 
 /* Arrow on right of each item */
 .classes__arrow {
-  font-size: 24px;
+  font-size: 40px;
   color: #725a58;
   opacity: 0.5;
   flex-shrink: 0;
@@ -924,6 +924,19 @@ button {
   inset: 16px;
   border: 1.5px solid rgba(255, 255, 255, 0.8);
   pointer-events: none;
+}
+
+.classes__list-row {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  transition: background-color 0.25s ease;
+  padding: 12px; /* so the background has some breathing room */
+  border-radius: 4px;
+}
+
+.classes__list-row:hover {
+  background-color: rgba(180, 90, 110, 0.12);
 }
 
 .beauty-tips {
