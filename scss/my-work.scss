@@ -40,17 +40,11 @@
   }
 }
 
-/* ===========================
-   BEAUTY TIPS
-   =========================== */
-
-/* sección de color a todo lo ancho */
 .beauty-tips-section {
-  background-color: #f7e8ea; /* ajusta al color del mockup */
+  background-color: #f7e8ea;
   padding: 50px 0;
 }
 
-/* contenedor de las #categorías */
 .beauty-tips-section .contact-tab {
   display: flex;
   justify-content: center;
@@ -60,10 +54,10 @@
 
 .beauty-tips-section .contact-tab a {
   font-family: $font-primary;
-  font-size: 0.9rem; /* más pequeño que My Work */
+  font-size: 0.9rem; 
   color: #777;
   text-decoration: none;
-  cursor: default; /* no parece link clickeable */
+  cursor: default; 
   padding: 4px 0;
   transition: color 0.2s ease;
 
@@ -72,7 +66,6 @@
   }
 }
 
-/* grid de videos */
 .beauty-tips-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -96,7 +89,6 @@
   }
 }
 
-/* botón centrado en beauty tips (reutiliza tu .btn--primary) */
 .beauty-tips-section .btn--primary {
   display: block;
   width: fit-content;
