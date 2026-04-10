@@ -1,3 +1,58 @@
+/* =============================================
+   FONT FACE DECLARATIONS
+   ============================================= */
+
+@font-face {
+  font-family: 'Whiteflower-Regular';
+  src: url('../fonts/Whiteflower-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Avenir';
+  src: url('../fonts/Avenir/Avenir Light/Avenir Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('../fonts/Avenir/Avenir Book/Avenir Book.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('../fonts/Avenir/Avenir Regular/Avenir Regular.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('../fonts/Avenir/Avenir Heavy/Avenir Heavy.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('../fonts/Avenir/Avenir Black/Avenir Black.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* =============================================
+   STYLES
+   ============================================= */
+
 .t-h1-cap {
   font-family: 'Baskervville', Georgia, serif;
   font-size: 80px;
@@ -57,47 +112,47 @@
 }
 
 .t-signature {
-  font-family: 'Pinyon Script', cursive;
+  font-family: 'Whiteflower-Regular', cursive;
   font-size: 54px;
   line-height: auto;
   font-weight: 400;
 }
 
 .t-btn {
-  font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
-  font-size: 20px;
+  font-family: 'Avenir', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 30px;
   line-height: 1.5;
-  font-weight: 500;
+  font-weight: 600; /* Avenir Heavy — closest to Montserrat 500 */
   letter-spacing: 0.08em;
 }
 
 .t-btn-sm {
-  font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
-  font-size: 18px;
+  font-family: 'Avenir', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 30px;
   line-height: 1.111;
-  font-weight: 500;
+  font-weight: 600; /* Avenir Heavy — closest to Montserrat 500 */
   letter-spacing: 0.08em;
 }
 
 .t-body {
-  font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
-  font-size: 18px;
+  font-family: 'Avenir', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 30px;
   line-height: 1.667;
   font-weight: 300;
 }
 
 .t-body-sm {
-  font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
-  font-size: 16px;
+  font-family: 'Avenir', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 30px;
   line-height: 1.75;
   font-weight: 300;
 }
 
 .t-caption {
-  font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
-  font-size: 14px;
+  font-family: 'Avenir', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 30px;
   line-height: 1.571;
-  font-weight: 400;
+  font-weight: 400;s
   letter-spacing: 0.06em;
 }
 
@@ -117,7 +172,7 @@ html {
 body {
   background: #f8f6f4;
   color: #191919;
-  font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Avenir', 'Helvetica Neue', Arial, sans-serif;
   font-size: 16px;
   line-height: 1.75;
   font-weight: 300;
@@ -213,7 +268,7 @@ button {
   border: 1px solid #725a58;
 }
 .logo__cb {
-  font-family: 'Pinyon Script', cursive;
+  font-family: 'Whiteflower-Regular', cursive;
   font-size: 18px;
   color: #725a58;
   line-height: 1;
@@ -386,7 +441,7 @@ button {
   opacity: 0.85;
 }
 .hero__title {
-  font-family: 'Pinyon Script', cursive;
+  font-family: 'Whiteflower-Regular', cursive;
   font-size: clamp(64px, 9vw, 130px);
   font-weight: 400;
   color: #ffffff;
@@ -394,21 +449,11 @@ button {
   margin: 0;
 }
 
-/*Probably get rid of this part 
-.hero__tagline {
-  font-family: "Baskervville", Georgia, serif;
-  font-size: clamp(16px, 1.5vw, 18px);
-  letter-spacing: 0.04em;
-  opacity: 0.9;
-  line-height: 1.667;
-}
-*/
-
 .hero__ig {
   display: flex;
   align-items: center;
   gap: 6px;
-  font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Avenir', 'Helvetica Neue', Arial, sans-serif;
   font-size: 14px;
   letter-spacing: 0.1em;
   opacity: 0.75;
@@ -424,7 +469,7 @@ button {
   align-items: center;
   gap: 8px;
   color: rgba(255, 255, 255, 0.6);
-  font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Avenir', 'Helvetica Neue', Arial, sans-serif;
   font-size: 10px;
   letter-spacing: 0.15em;
   text-transform: uppercase;
@@ -473,7 +518,7 @@ button {
   color: #191919;
 }
 .about__desc {
-  font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Avenir', 'Helvetica Neue', Arial, sans-serif;
   font-size: 16px;
   line-height: 1.75;
   color: #725a58;
@@ -502,9 +547,11 @@ button {
   margin-left: 80px;
 }
 .about__name {
-  font-family: 'Pinyon Script', cursive;
+  font-family: 'Whiteflower-Regular', cursive;
   font-size: 48px;
   color: #725a58;
+  display: inline-block;
+  transform: rotate(-10deg);
 }
 
 .brands {
@@ -527,7 +574,7 @@ button {
   background: rgba(114, 90, 88, 0.2);
 }
 .brands__title {
-  font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Avenir', 'Helvetica Neue', Arial, sans-serif;
   font-size: 16px;
   color: #725a58;
   white-space: nowrap;
@@ -539,6 +586,12 @@ button {
   flex-wrap: wrap;
   gap: 40px 60px;
 }
+
+.brands__logos + .brands__logos {
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+
 .brands__logo {
   height: 32px;
   width: auto;
@@ -580,7 +633,7 @@ button {
 }
 
 .star__desc {
-  font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Avenir', 'Helvetica Neue', Arial, sans-serif;
   font-size: 16px;
   color: black;
   max-width: 400px;
@@ -659,7 +712,7 @@ button {
 }
 
 .testimonials__author {
-  font-family: 'Pinyon Script', cursive;
+  font-family: 'Whiteflower-Regular', cursive;
   font-size: 32px;
   color: #191919;
   font-style: normal;
@@ -710,7 +763,7 @@ button {
 }
 
 .services__desc {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Avenir', sans-serif;
   font-size: 16px;
   color: #a3a3a3;
   letter-spacing: 0.04em;
@@ -880,7 +933,7 @@ button {
 }
 
 .classes__list li p {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Avenir', sans-serif;
   font-size: 14px;
   color: #535353;
   line-height: 1.7;
@@ -1123,9 +1176,68 @@ button {
     padding: 64px 24px;
   }
   .classes__inner {
-    flex-direction: column;
-    gap: 40px;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
   }
+
+  .classes__text {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .classes__list {
+    width: 100%;
+  }
+
+  .classes__list-row {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 16px 12px;
+  text-align: center;
+  width: 100%;
+}
+
+.classes__list-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 8px;
+}
+
+.classes__list li p {
+  font-size: 13px;
+  text-align: center;
+  padding-left: 0;
+  width: 100%;
+}
+
+.classes__list-row::after {
+  padding-left: 0;
+  text-align: center;
+  width: 100%;
+}
+  .classes__list-title {
+    flex-direction: column;  /* ← stack badge on top of title */
+    align-items: center;
+    gap: 8px;
+  }
+
+  .classes__list li p {
+    font-size: 13px;
+    text-align: center;
+    padding-left: 0;  /* ← remove the desktop left padding */
+  }
+
+  .classes__list-row::after {
+    padding-left: 0;  /* ← remove offset that assumed badge was inline */
+    text-align: center;
+  }
+
   .classes__images {
     width: 100%;
     height: 280px;
@@ -1172,4 +1284,215 @@ button {
   .gallery__item:nth-child(3) {
     display: none;
   }
+}
+
+/* ==============================================
+   MOBILE STYLES — index.html specific fixes
+   Applies to screens 768px and below
+   ============================================== */
+
+@media (max-width: 768px) {
+
+  /* ---- 1. ABOUT SECTION ---- */
+  .about__inner {
+    flex-direction: column-reverse; /* text first, image second */
+  }
+  .about__text {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+  .about__text p,
+  .about__text h2,
+  .about__text img {
+    text-align: center;
+    align-self: center;
+  }
+  .about__text > div {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .about__portrait-wrap {
+    padding: 0;
+    width: 100%;
+  }
+  .about__portrait {
+    width: 100%;
+    max-width: 100%;
+  }
+  .about__portrait img {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+    object-position: center;
+  }
+
+  /* ---- 2. BRANDS SECTION ---- */
+  .brands__logos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px 32px;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+  }
+  /* Remove the spacer <br> tags' visual effect */
+  .brands__logos br {
+    display: none;
+  }
+  .brands__logo {
+    height: 28px;
+    max-width: 100px;
+    width: auto;
+  }
+
+  /* ---- 3. SERVICES — stack photos vertically ---- */
+  .services__photos {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    gap: 24px;
+    align-items: center;
+    position: static;
+  }
+  .services__photo-item,
+  .services__photo-item--left,
+  .services__photo-item--center,
+  .services__photo-item--right {
+    position: relative;
+    width: 100%;
+    max-width: 340px;
+    height: auto;
+    transform: none;
+    left: auto;
+    z-index: auto;
+    border: none;
+  }
+  .services__photo-item--left:hover,
+  .services__photo-item--right:hover {
+    width: 100%;
+    max-width: 340px;
+    height: auto;
+    z-index: auto;
+  }
+  .services__photo-item--left::before,
+  .services__photo-item--right::before,
+  .services__photo-item--center::before {
+    display: none;
+  }
+  .services__photo-label {
+    font-size: 1.6em;
+    left: 12px;
+    bottom: 12px;
+  }
+  .services__photo-item--center .services__photo-label {
+    font-size: 1.6em;
+    left: 12px;
+    bottom: 12px;
+  }
+
+  /* ---- 4. CLASSES SECTION ---- */
+  .classes__inner {
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+  .classes__text {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+  .classes__list-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 16px 12px;
+  }
+  /* Hide the desktop arrow > */
+  .classes__arrow {
+    display: none;
+  }
+  /* Show mobile CTA text instead */
+  .classes__list-row::after {
+    content: 'View Class >';
+    display: block;
+    font-family: 'Avenir', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #725a58;
+    letter-spacing: 0.05em;
+    margin-top: 4px;
+    padding-left: 40px; /* align under title, past badge */
+  }
+  .classes__list-title {
+    align-items: center;
+  }
+  .classes__list li p {
+    font-size: 13px;
+  }
+  /* Image: centered and full-width */
+  .classes__images {
+    width: 100%;
+    height: auto;
+  }
+  .classes__img-wrap {
+    width: 100%;
+  }
+  .classes__img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  /* ---- 5. MAKEUP IMAGE (makeup.png) ---- */
+  .classes__img-wrap::after {
+    display: none; /* remove the inset border on mobile */
+  }
+
+  /* ---- 6. BEAUTY TIPS — horizontal carousel ---- */
+  .beauty-tips__grid {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 16px;
+    padding-bottom: 12px;
+    width: 100%;
+    /* Hide scrollbar visually but keep scroll functional */
+    scrollbar-width: none;
+  }
+  .beauty-tips__grid::-webkit-scrollbar {
+    display: none;
+  }
+  .beauty-tips__card {
+    flex: 0 0 80vw;
+    max-width: 300px;
+    scroll-snap-align: start;
+  }
+  .beauty-tips__thumb {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    overflow: hidden;
+  }
+  .beauty-tips__thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+#contact-form {
+  width: 100%;
+  align-items: flex-start;
+  padding: 32px 24px;
+}
+
+#contact-form #service-form .service-form-item {
+  align-items: flex-start;
+  text-align: left;
+}
+
+#contact-form label {
+  text-align: left;
 }
