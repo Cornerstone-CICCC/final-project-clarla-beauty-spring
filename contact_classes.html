@@ -25,7 +25,6 @@
     <div id="navbar"></div>
 
     <!-- Title Section -->
-    <!-- Title Section -->
     <section class="title-section">
       <div class="container">
         <h2 class="section-title section-title--center">Contact</h2>
@@ -53,20 +52,31 @@
     <!-- Contact Section -->
     <section id="contact-form">
       <div class="contact-tab">
-        <a href="contact_service-wedding.html">Services</a>
-        <a href="contact_classes.html">Classes</a>
+        <a href="contact.html">Services</a>
+        <a href="contact_classes.html" id="tab-current">Classes</a>
       </div>
-      <form action="#" method="post">
-        <div id="eventType">
+      <div class="breadcrumb">
+        <img src="images/icons/arrow-back.svg" alt="Back" />
+        <a href="contact.html">Back</a>
+      </div>
+
+      <form id="service-form" action="contact_classes-submitted.html" method="get">
+        <div id="eventType" class="service-form-item">
           <h5>Event Type</h5>
-          <input type="button" value="1-on-1 Master Subscription" />
-          <input type="button" value="1-day Makeup workshop" />
-          <input type="button" value="Self-Makeup beginner class" />
-          <!-- icon is in /images/icons/ -->
+          <div class="service-form-item-options">
+            <input
+              type="button"
+              value="1-on-1 Master Subscription"
+              class="event-type-btn is-selected"
+            />
+            <input type="button" value="1-day Makeup workshop" class="event-type-btn" />
+            <input type="button" value="Self-Makeup beginner class" class="event-type-btn" />
+          </div>
         </div>
-        <div>
+
+        <div class="service-form-item">
           <h5>Class Date</h5>
-          <p>When you would like to take your class?</p>
+          <label for="event-date">When you would like to take your class?</label>
           <input type="date" id="event-date" name="event-date" />
           <div>
             <input type="checkbox" name="notDecided" id="notDecided" />
@@ -74,53 +84,58 @@
           </div>
         </div>
 
-        <div>
+        <div class="service-form-item">
           <h5>Any questions?</h5>
-          <textarea name="questions" id="questions" placeholder="Your message"></textarea>
+          <textarea
+            name="questions"
+            id="anything-else"
+            cols="30"
+            rows="10"
+            placeholder="Your message"
+          ></textarea>
         </div>
 
-        <div>
+        <div class="service-form-item" id="customerName">
           <h5>Name</h5>
-          <input type="text" name="name" id="name" placeholder="Your name" />
+          <input type="text" name="name" id="name" placeholder="Your name" required />
         </div>
 
-        <div>
+        <div id="contactOption" class="service-form-item">
           <h5>Contact</h5>
-          <!-- call -->
+          <div class="contact-option-row">
+            <input type="radio" name="contactMethod" id="contact-call" value="call" checked />
+            <label for="contact-call">Call</label>
+            <input type="tel" name="callNumber" id="call-number" placeholder="Your mobile number" />
+          </div>
 
-          <input type="radio" name="contactMethod" id="contact-call" value="call" />
-          <label for="contact-call">Call</label>
-          <!-- need js for selecting country -->
-          <input type="tel" name="callNumber" id="call-number" placeholder="Your mobile number" />
+          <div class="contact-option-row">
+            <input type="radio" name="contactMethod" id="contact-whatsapp" value="whatsapp" />
+            <label for="contact-whatsapp">WhatsApp</label>
+            <input
+              type="tel"
+              name="whatsappNumber"
+              id="whatsapp-number"
+              placeholder="Your mobile number"
+            />
+          </div>
 
-          <!-- whatsapp -->
+          <div class="contact-option-row">
+            <input type="radio" name="contactMethod" id="contact-sms" value="sms" />
+            <label for="contact-sms">SMS</label>
+            <input type="tel" name="smsNumber" id="sms-number" placeholder="Your mobile number" />
+          </div>
 
-          <input type="radio" name="contactMethod" id="contact-whatsapp" value="whatsapp" />
-          <label for="contact-whatsapp">WhatsApp</label>
-          <!-- need js for selecting country -->
-          <input
-            type="tel"
-            name="whatsappNumber"
-            id="whatsapp-number"
-            placeholder="Your mobile number"
-          />
-
-          <!-- sms -->
-
-          <input type="radio" name="contactMethod" id="contact-sms" value="sms" />
-          <label for="contact-sms">SMS</label>
-          <!-- need js for selecting country -->
-          <input type="tel" name="smsNumber" id="sms-number" placeholder="Your mobile number" />
-
-          <!-- email -->
-
-          <input type="radio" name="contactMethod" id="contact-email" value="email" />
-          <label for="contact-email">Email</label>
-          <input type="email" name="emailAddress" id="email-address" placeholder="Your email" />
+          <div class="contact-option-row">
+            <input type="radio" name="contactMethod" id="contact-email" value="email" />
+            <label for="contact-email">Email</label>
+            <input type="email" name="emailAddress" id="email-address" placeholder="Your email" />
+          </div>
         </div>
 
         <!-- buttons -->
-        <a href="contact_classes-submitted.html">Next</a>
+        <button class="btn btn--primary" type="submit" formaction="contact_classes-submitted.html">
+          Submit
+        </button>
       </form>
     </section>
 
@@ -128,7 +143,7 @@
     <div id="footer"></div>
 
     <!-- Scripts -->
-    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
     <script src="js/header.js"></script>
     <script src="js/footer.js"></script>
   </body>

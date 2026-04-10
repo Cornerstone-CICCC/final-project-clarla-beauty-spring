@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BC Beauty - Professional Makeup & Hairstyle Artist</title>
+    <meta
+      name="description"
+      content="Professional makeup artist and hairstylist specializing in weddings, parties, photoshoots, and beauty education."
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <div id="navbar"></div>
+
+    <!-- Title Section -->
+    <section class="title-section">
+      <div class="container">
+        <h2 class="section-title section-title--center">Contact</h2>
+        <hr class="section-divider" />
+        <p class="section-description">
+          Get a quote and book a free consultation for your special day or our academy services
+        </p>
+      </div>
+    </section>
+    <section class="contact-info">
+      <span class="contact-info-item">
+        <img src="images/icons/ph_phone.svg" alt="Phone" />
+        <span>+1 0000000000</span>
+      </span>
+      <span class="contact-info-item">
+        <img src="images/icons/ic_baseline-whatsapp.svg" alt="WhatsApp" />
+        <span>+1 0000000000</span>
+      </span>
+      <span class="contact-info-item">
+        <img src="images/icons/iconoir_instagram.svg" alt="Instagram" />
+        <span>carlabeatrizs_</span>
+      </span>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact-form">
+      <div class="contact-tab">
+        <a href="contact.html" id="tab-current">Services</a>
+        <a href="contact_classes.html">Classes</a>
+      </div>
+      <div class="breadcrumb">
+        <img src="images/icons/arrow-back.svg" alt="Back" />
+        <a href="contact.html">Back</a>
+      </div>
+
+      <form
+        id="service-form"
+        action="contact_service-wedding-booked.html"
+        method="get"
+        data-wedding-form
+      >
+        <div id="eventType" class="service-form-item">
+          <h5>Bridal Service</h5>
+          <div class="service-form-item-options">
+            <input type="button" value="Makeup" class="event-type-btn is-selected" />
+            <input type="button" value="Hairstyle" class="event-type-btn" />
+          </div>
+        </div>
+        <div class="service-form-item">
+          <h5>Event Location</h5>
+          <label for="event-location">Address</label>
+          <input
+            type="text"
+            id="event-location"
+            name="eventLocation"
+            autocomplete="street-address"
+          />
+          <div>
+            <input type="checkbox" name="notDecidedLocation" id="notDecidedLocation" />
+            <label for="notDecidedLocation">Not decided</label>
+          </div>
+        </div>
+        <div class="service-form-item">
+          <h5>Premium Services</h5>
+          <div class="two-column">
+            <div class="two-column-item">
+              <div class="radio-row">
+                <input type="checkbox" name="deep-skin-cleansing" id="deep-skin-cleansing" />
+                <label for="deep-skin-cleansing">Deep skin cleansing</label>
+              </div>
+              <div class="radio-row">
+                <input type="checkbox" name="eyelash-extension" id="eyelash-extension" />
+                <label for="eyelash-extension">Eyelash Extension</label>
+              </div>
+              <div class="radio-row">
+                <input type="checkbox" name="hydromassage" id="hydromassage" />
+                <label for="hydromassage">Hydromassage</label>
+              </div>
+              <div class="radio-row">
+                <input type="checkbox" name="waxing" id="waxing" />
+                <label for="waxing">Waxing</label>
+              </div>
+              <div class="radio-row">
+                <input type="checkbox" name="relaxing-massage" id="relaxing-massage" />
+                <label for="relaxing-massage">Relaxing Massage</label>
+              </div>
+            </div>
+            <div class="two-column-item">
+              <div class="radio-row">
+                <input type="checkbox" name="bleach-body-hair" id="bleach-body-hair" />
+                <label for="bleach-body-hair">Bleach Body Hair</label>
+              </div>
+              <div class="radio-row">
+                <input type="checkbox" name="hair-moisture" id="hair-moisture" />
+                <label for="hair-moisture">Hair Moisture</label>
+              </div>
+              <div class="radio-row">
+                <input type="checkbox" name="foot-and-hand-spa" id="foot-and-hand-spa" />
+                <label for="foot-and-hand-spa">Foot and Hand SPA</label>
+              </div>
+              <div class="radio-row">
+                <input type="checkbox" name="gommage" id="gommage" />
+                <label for="gommage">Gommage (body exfoliation and hydration)</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-form-item">
+          <h5>Anyone else need service?</h5>
+
+          <!-- Groom -->
+          <div class="anyone-service">
+            <div class="anyone-service-count">
+              <label for="groom-count">Women</label>
+              <div class="input-group input-number-group">
+                <div class="input-group-button">
+                  <span class="input-number-decrement">-</span>
+                </div>
+                <input
+                  class="input-number"
+                  type="number"
+                  id="groom-count"
+                  name="groomCount"
+                  value="0"
+                  min="0"
+                  max="5"
+                />
+                <div class="input-group-button">
+                  <span class="input-number-increment">+</span>
+                </div>
+              </div>
+              <hr class="anyone-service-divider" />
+            </div>
+            <div class="anyone-service-options">
+              <div class="radio-row">
+                <input type="checkbox" name="groomMakeup" id="groom-makeup" />
+                <label for="groom-makeup">Makeup</label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bridesmaid -->
+          <div class="anyone-service">
+            <div class="anyone-service-count">
+              <label for="bridesmaid-count">Man</label>
+              <div class="input-group input-number-group">
+                <div class="input-group-button">
+                  <span class="input-number-decrement">-</span>
+                </div>
+                <input
+                  class="input-number"
+                  type="number"
+                  id="bridesmaid-count"
+                  name="bridesmaidCount"
+                  value="0"
+                  min="0"
+                  max="5"
+                />
+                <div class="input-group-button">
+                  <span class="input-number-increment">+</span>
+                </div>
+              </div>
+              <hr class="anyone-service-divider" />
+            </div>
+            <div class="anyone-service-options">
+              <div class="radio-row">
+                <input type="checkbox" name="bridesmaidHairstyle" id="bridesmaid-hairstyle" />
+                <label for="bridesmaid-hairstyle">Hairstyle</label>
+              </div>
+              <div class="radio-row">
+                <input type="checkbox" name="bridesmaidMakeup" id="bridesmaid-makeup" />
+                <label for="bridesmaid-makeup">Makeup</label>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="service-form-item">
+          <h5>Anything you want us to know?</h5>
+          <textarea
+            name="anything-else"
+            id="anything-else"
+            cols="30"
+            rows="10"
+            placeholder="Your message"
+          ></textarea>
+        </div>
+
+        <button
+          class="btn btn--primary"
+          type="submit"
+          formaction="contact_service-party-booked.html"
+        >
+          Submit
+        </button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <!-- Scripts -->
+    <script src="js/contact.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+  </body>
+</html>
