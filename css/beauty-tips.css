@@ -1,0 +1,179 @@
+@font-face {
+  font-family: "Baskerville";
+  src: local("Baskerville"), local("Baskerville Regular");
+  font-style: normal;
+  font-weight: 400;
+}
+body {
+  font-family: "Avenir", sans-serif;
+  color: #535353;
+  background-color: #f8f6f4;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Baskerville", serif;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 80px;
+  line-height: 130%;
+}
+
+h2 {
+  font-size: 68px;
+  line-height: 100%;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 48px;
+  line-height: 130%;
+  font-weight: 100;
+}
+
+h4 {
+  font-size: 36px;
+  line-height: 120%;
+}
+
+h5 {
+  font-size: 32px;
+  line-height: 130%;
+}
+
+h6 {
+  font-size: 24px;
+  line-height: 130%;
+}
+
+/* Paragraph */
+p {
+  font-size: 18px;
+  line-height: 150%;
+  color: #535353;
+}
+
+.section-title {
+  font-family: "Baskerville", serif;
+  color: #5e4a49;
+  text-transform: uppercase;
+}
+
+.section-description {
+  font-family: "Avenir", sans-serif;
+  color: #888888;
+  margin: 0;
+}
+
+.section-divider {
+  width: 200px;
+  height: 1px;
+  background-color: #e3b6b1;
+  border: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.btn {
+  width: 235px;
+}
+
+.beauty-tips {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 80px 20px;
+  background-color: #fae9e7;
+  width: 100vw;
+}
+.beauty-tips .tips-tags {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+.beauty-tips .tips-tags a {
+  font-family: "Baskerville", serif;
+  font-size: 24px;
+  color: #888888;
+  font-weight: 100;
+  text-decoration: none;
+  line-height: 130%;
+}
+.beauty-tips .tips-tags a:hover {
+  color: #e3b6b1;
+}
+.beauty-tips .tips-tags a#current-tag {
+  color: #191919;
+}
+.beauty-tips > button {
+  align-self: center;
+  margin-top: 32px;
+}
+.beauty-tips .tri-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  width: 950px;
+}
+.beauty-tips .beauty-tips-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.title-section .container > .btn {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 32px;
+}
+
+@media (max-width: 768px) {
+  .beauty-tips {
+    gap: 24px;
+    padding: 40px 20px;
+  }
+  .beauty-tips .tips-tags {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+  .beauty-tips .tri-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: 100%;
+  }
+  .title-section .container > .btn {
+    margin-top: 24px;
+  }
+}
+@media (max-width: 480px) {
+  .beauty-tips {
+    gap: 24px;
+    padding: 40px 20px;
+  }
+  .beauty-tips .tips-tags {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+  .beauty-tips .tri-grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    width: 100%;
+  }
+  .title-section .container > .btn {
+    margin-top: 24px;
+  }
+}
+
+/*# sourceMappingURL=beauty-tips.css.map */
