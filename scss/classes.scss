@@ -12,6 +12,9 @@
   gap: 80px;
   padding: 80px 20px;
   background-color: $bg-light-pink;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
 }
 .class-unit {
   display: flex;
