@@ -63,8 +63,7 @@
 .mobile-menu .container .mobile-logo {
   width: 100px;
   height: 100px;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   content: url(../images/logo/logo.svg);
 }
 .mobile-menu .container .mobile-nav-links {
@@ -129,4 +128,6 @@
 .mobile-menu.open {
   transform: translateX(0);
   pointer-events: auto;
-}/*# sourceMappingURL=mobile-menu.css.map */
+}
+
+/*# sourceMappingURL=mobile-menu.css.map */

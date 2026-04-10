@@ -1,0 +1,42 @@
+@use 'variables' as *;
+@use 'typography' as *;
+
+.gallery-mywork {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 40px auto;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+  }
+
+  @media (max-width: 900px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
+
+  #contact-form {
+    margin-top: 10px;
+  }
+
+  .contact-tab {
+    margin-bottom: 10px;
+  }
+
+  .gallery-mywork {
+    margin-top: 10px;
+  }
+
+}
