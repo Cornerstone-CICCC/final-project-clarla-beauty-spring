@@ -152,7 +152,7 @@
   font-family: 'Avenir', 'Helvetica Neue', Arial, sans-serif;
   font-size: 30px;
   line-height: 1.571;
-  font-weight: 400;s
+  font-weight: 400;
   letter-spacing: 0.06em;
 }
 
@@ -1176,9 +1176,9 @@ button {
     padding: 64px 24px;
   }
   .classes__inner {
-  flex-direction: column;
-  align-items: center;
-  gap: 32px;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
   }
 
   .classes__text {
@@ -1192,37 +1192,37 @@ button {
   }
 
   .classes__list-row {
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  padding: 16px 12px;
-  text-align: center;
-  width: 100%;
-}
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 16px 12px;
+    text-align: center;
+    width: 100%;
+  }
 
-.classes__list-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  gap: 8px;
-}
+  .classes__list-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 8px;
+  }
 
-.classes__list li p {
-  font-size: 13px;
-  text-align: center;
-  padding-left: 0;
-  width: 100%;
-}
+  .classes__list li p {
+    font-size: 13px;
+    text-align: center;
+    padding-left: 0;
+    width: 100%;
+  }
 
-.classes__list-row::after {
-  padding-left: 0;
-  text-align: center;
-  width: 100%;
-}
+  .classes__list-row::after {
+    padding-left: 0;
+    text-align: center;
+    width: 100%;
+  }
   .classes__list-title {
-    flex-direction: column;  /* ← stack badge on top of title */
+    flex-direction: column; /* ← stack badge on top of title */
     align-items: center;
     gap: 8px;
   }
@@ -1230,11 +1230,11 @@ button {
   .classes__list li p {
     font-size: 13px;
     text-align: center;
-    padding-left: 0;  /* ← remove the desktop left padding */
+    padding-left: 0; /* ← remove the desktop left padding */
   }
 
   .classes__list-row::after {
-    padding-left: 0;  /* ← remove offset that assumed badge was inline */
+    padding-left: 0; /* ← remove offset that assumed badge was inline */
     text-align: center;
   }
 
@@ -1292,7 +1292,6 @@ button {
    ============================================== */
 
 @media (max-width: 768px) {
-
   /* ---- 1. ABOUT SECTION ---- */
   .about__inner {
     flex-direction: column-reverse; /* text first, image second */
