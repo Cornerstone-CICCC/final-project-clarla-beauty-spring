@@ -1,18 +1,383 @@
-/* Error: Undefined variable.
- *    ,
- * 11 |   font-family: $font-body;
- *    |                ^^^^^^^^^^
- *    '
- *   scss\_typography.scss 11:16  @use
- *   scss\classes.scss 2:1        root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 11 \2502    font-family: $font-body;\d\a    \2502                 ^^^^^^^^^^\a    \2575 \a   scss\\_typography.scss 11:16  @use\a   scss\\classes.scss 2:1        root stylesheet";
+@font-face {
+  font-family: "Baskerville";
+  src: local("Baskerville"), local("Baskerville Regular");
+  font-style: normal;
+  font-weight: 400;
 }
+body {
+  font-family: "Avenir", sans-serif;
+  color: #535353;
+  background-color: #f8f6f4;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Baskerville", serif;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 80px;
+  line-height: 130%;
+}
+
+h2 {
+  font-size: 68px;
+  line-height: 100%;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 48px;
+  line-height: 130%;
+  font-weight: 100;
+}
+
+h4 {
+  font-size: 36px;
+  line-height: 120%;
+}
+
+h5 {
+  font-size: 32px;
+  line-height: 130%;
+}
+
+h6 {
+  font-size: 24px;
+  line-height: 130%;
+}
+
+/* Paragraph */
+p {
+  font-size: 18px;
+  line-height: 150%;
+  color: #535353;
+}
+
+.section-title {
+  font-family: "Baskerville", serif;
+  color: #5e4a49;
+  text-transform: uppercase;
+}
+
+.section-description {
+  font-family: "Avenir", sans-serif;
+  color: #888888;
+  margin: 0;
+}
+
+.section-divider {
+  width: 200px;
+  height: 1px;
+  background-color: #e3b6b1;
+  border: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.class-overview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+  padding: 80px 20px;
+  background-color: #fae9e7;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+
+.class-unit {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 1024px;
+  gap: 40px;
+  padding: 0 20px;
+}
+.class-unit .class-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+.class-unit .class-details img {
+  height: auto;
+  object-fit: contain;
+  width: 328px;
+  height: 500px;
+}
+.class-unit .class-details h4 {
+  font-family: "Baskerville", serif;
+  font-size: 36px;
+  font-weight: 400;
+  font-style: normal;
+  color: #725a58;
+  margin: 0;
+}
+.class-unit .class-details .class-features {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 24px;
+}
+.class-unit .class-details .class-features .feature-icon {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 6px;
+}
+.class-unit .class-details .class-features .feature-icon img {
+  width: 24px;
+  height: 24px;
+}
+.class-unit .class-details .class-features .feature-icon p {
+  font-family: "Avenir", sans-serif;
+  font-size: 16px;
+  color: #191919;
+  font-weight: 100;
+}
+.class-unit .class-details .inner-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+.class-unit .class-details .inner-content h6 {
+  font-family: "Baskerville", serif;
+  font-size: 24px;
+  font-weight: 400;
+  font-style: normal;
+  color: #191919;
+  margin: 0;
+}
+.class-unit .class-details .inner-content p {
+  font-family: "Avenir", sans-serif;
+  font-size: 16px;
+  color: #725a58;
+}
+
+.title {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  width: 1024px;
+  margin: 0 auto;
+}
+.title .breadcrumb {
+  align-self: flex-start;
+}
+.title h1 {
+  font-family: "Baskerville", serif;
+  font-size: 80px;
+  font-weight: 100;
+  font-style: normal;
+  color: #725a58;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.main {
+  background-color: #fae9e7;
+  padding: 60px 0;
+  width: 100%;
+}
+
+.main .container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 60px;
+  width: 1024px;
+}
+.main .container .left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 373px;
+}
+.main .container .left > img {
+  width: 373px;
+  height: auto;
+  object-fit: contain;
+}
+.main .container .left .inner-text {
+  display: flex;
+  width: 373px;
+  padding: 24px 24px 40px 24px;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 40px;
+  border: 1px solid #b99692;
+}
+.main .container .left .inner-text > .btn.btn--primary {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  align-self: stretch;
+}
+.main .container .left .inner-text .class-features {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+.main .container .left .inner-text .class-features h4 {
+  font-family: "Baskerville", serif;
+  font-size: 36px;
+  font-weight: 400;
+  font-style: normal;
+  color: #725a58;
+  margin: 0;
+}
+.main .container .left .inner-text .class-features .feature-icon {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 6px;
+}
+.main .container .left .inner-text .class-features .feature-icon img {
+  width: 24px;
+  height: 24px;
+}
+.main .container .left .inner-text .class-features .feature-icon p {
+  font-family: "Avenir", sans-serif;
+  font-size: 18px;
+  color: #191919;
+  font-weight: 300;
+  line-height: normal;
+}
+.main .container .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+  flex: 1 0 0;
+}
+.main .container .right .content-unit {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+.main .container .right .content-unit h4 {
+  font-family: "Baskerville", serif;
+  font-size: 36px;
+  font-weight: 400;
+  font-style: normal;
+  color: #725a58;
+  margin: 0;
+}
+.main .container .right .content-unit h6 {
+  font-family: "Baskerville", serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 130%;
+  font-style: normal;
+  color: #191919;
+  margin: 0;
+}
+.main .container .right .content-unit p {
+  font-family: "Avenir", sans-serif;
+  font-size: 18px;
+  color: #725a58;
+}
+
+@media (max-width: 768px) {
+  .title {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .title h1 {
+    font-size: 56px;
+    line-height: 115%;
+  }
+  .main .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    padding: 0 20px;
+  }
+  .main .container .left {
+    width: 100%;
+    flex-direction: row;
+    align-items: stretch;
+    margin: 0 auto;
+  }
+  .main .container .left > img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    align-self: stretch;
+  }
+  .main .container .left .inner-text {
+    width: 50%;
+    padding: 24px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin: 0;
+  }
+  .main .container .right {
+    width: 100%;
+    max-width: 1024px;
+    flex: none;
+  }
+  .main .container .right .content-unit {
+    width: 100%;
+    max-width: 1024px;
+  }
+}
+@media (max-width: 480px) {
+  .title {
+    gap: 12px;
+  }
+  .title h1 {
+    font-size: 40px;
+    line-height: 120%;
+  }
+  .main .container .left {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main .container .left > img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    order: 2;
+  }
+  .main .container .left .inner-text {
+    width: 100%;
+    padding: 24px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    order: 1;
+  }
+  .main .container .right {
+    width: 100%;
+    max-width: none;
+  }
+  .main .container .right .content-unit {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+/*# sourceMappingURL=classes.css.map */
