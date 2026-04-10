@@ -15,7 +15,6 @@ body {
   font-size: 16px;
 }
 
-/* Headings */
 h1,
 h2,
 h3,
@@ -58,14 +57,12 @@ h6 {
   line-height: 130%;
 }
 
-/* Paragraph */
 p {
   font-size: 18px;
   line-height: 150%;
   color: $dark-gray;
 }
 
-// Title Section
 .section-title {
   font-family: $font-heading;
   color: $darkest-brown;
