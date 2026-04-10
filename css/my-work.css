@@ -1,121 +1,17 @@
-@font-face {
-  font-family: "Baskerville";
-  src: local("Baskerville"), local("Baskerville Regular");
-  font-style: normal;
-  font-weight: 400;
-}
-body {
-  font-family: "Avenir", sans-serif;
-  color: #535353;
-  background-color: #f8f6f4;
-  line-height: 1.6;
-  font-size: 16px;
-}
+/* Error: Undefined variable.
+ *    ,
+ * 62 |   font-family: $font-primary;
+ *    |                ^^^^^^^^^^^^^
+ *    '
+ *   scss\my-work.scss 62:16  root stylesheet */
 
-/* Headings */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Baskerville", serif;
-  font-style: normal;
-}
-
-h1 {
-  font-size: 80px;
-  line-height: 130%;
-}
-
-h2 {
-  font-size: 68px;
-  line-height: 100%;
-  font-weight: 400;
-}
-
-h3 {
-  font-size: 48px;
-  line-height: 130%;
-  font-weight: 100;
-}
-
-h4 {
-  font-size: 36px;
-  line-height: 120%;
-}
-
-h5 {
-  font-size: 32px;
-  line-height: 130%;
-}
-
-h6 {
-  font-size: 24px;
-  line-height: 130%;
-}
-
-/* Paragraph */
-p {
-  font-size: 18px;
-  line-height: 150%;
-  color: #535353;
-}
-
-.section-title {
-  font-family: "Baskerville", serif;
-  color: #5e4a49;
-  text-transform: uppercase;
-}
-
-.section-description {
-  font-family: "Avenir", sans-serif;
-  color: #888888;
-  margin: 0;
-}
-
-.section-divider {
-  width: 200px;
-  height: 1px;
-  background-color: #e3b6b1;
-  border: none;
-}
-
-.gallery-mywork {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  justify-items: center;
-  align-items: center;
-  width: 100%;
-  max-width: 1200px;
-  margin: 40px auto;
-}
-.gallery-mywork img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 10px;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
   display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 62 \2502    font-family: $font-primary;\d\a    \2502                 ^^^^^^^^^^^^^\a    \2575 \a   scss\\my-work.scss 62:16  root stylesheet";
 }
-@media (max-width: 900px) {
-  .gallery-mywork {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (max-width: 600px) {
-  .gallery-mywork {
-    grid-template-columns: 1fr;
-  }
-}
-.gallery-mywork #contact-form {
-  margin-top: 10px;
-}
-.gallery-mywork .contact-tab {
-  margin-bottom: 10px;
-}
-.gallery-mywork .gallery-mywork {
-  margin-top: 10px;
-}
-
-/*# sourceMappingURL=my-work.css.map */

@@ -111,8 +111,7 @@ p {
 }
 .class-unit .class-details img {
   height: auto;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   width: 328px;
   height: 500px;
 }
@@ -210,8 +209,7 @@ p {
 .main .container .left > img {
   width: 373px;
   height: auto;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 .main .container .left .inner-text {
   display: flex;
@@ -321,8 +319,7 @@ p {
   .main .container .left > img {
     width: 50%;
     height: auto;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     align-self: stretch;
   }
   .main .container .left .inner-text {
@@ -359,8 +356,7 @@ p {
   .main .container .left > img {
     width: 100%;
     height: auto;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     order: 2;
   }
   .main .container .left .inner-text {
@@ -379,4 +375,6 @@ p {
     width: 100%;
     max-width: none;
   }
-}/*# sourceMappingURL=classes.css.map */
+}
+
+/*# sourceMappingURL=classes.css.map */
