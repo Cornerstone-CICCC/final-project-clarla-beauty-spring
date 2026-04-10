@@ -1,11 +1,11 @@
 @font-face {
-  font-family: "Baskerville";
-  src: local("Baskerville"), local("Baskerville Regular");
+  font-family: 'Baskerville';
+  src: local('Baskerville'), local('Baskerville Regular');
   font-style: normal;
   font-weight: 400;
 }
 body {
-  font-family: "Avenir", sans-serif;
+  font-family: 'Avenir', sans-serif;
   color: #535353;
   background-color: #f8f6f4;
   line-height: 1.6;
@@ -19,7 +19,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Baskerville", serif;
+  font-family: 'Baskerville', serif;
   font-style: normal;
 }
 
@@ -63,13 +63,13 @@ p {
 }
 
 .section-title {
-  font-family: "Baskerville", serif;
+  font-family: 'Baskerville', serif;
   color: #5e4a49;
   text-transform: uppercase;
 }
 
 .section-description {
-  font-family: "Avenir", sans-serif;
+  font-family: 'Avenir', sans-serif;
   color: #888888;
   margin: 0;
 }
@@ -92,6 +92,9 @@ p {
   gap: 80px;
   padding: 80px 20px;
   background-color: #fae9e7;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
 }
 
 .class-unit {
@@ -116,7 +119,7 @@ p {
   height: 500px;
 }
 .class-unit .class-details h4 {
-  font-family: "Baskerville", serif;
+  font-family: 'Baskerville', serif;
   font-size: 36px;
   font-weight: 400;
   font-style: normal;
@@ -140,7 +143,7 @@ p {
   height: 24px;
 }
 .class-unit .class-details .class-features .feature-icon p {
-  font-family: "Avenir", sans-serif;
+  font-family: 'Avenir', sans-serif;
   font-size: 16px;
   color: #191919;
   font-weight: 100;
@@ -152,7 +155,7 @@ p {
   gap: 24px;
 }
 .class-unit .class-details .inner-content h6 {
-  font-family: "Baskerville", serif;
+  font-family: 'Baskerville', serif;
   font-size: 24px;
   font-weight: 400;
   font-style: normal;
@@ -160,7 +163,7 @@ p {
   margin: 0;
 }
 .class-unit .class-details .inner-content p {
-  font-family: "Avenir", sans-serif;
+  font-family: 'Avenir', sans-serif;
   font-size: 16px;
   color: #725a58;
 }
@@ -177,7 +180,7 @@ p {
   align-self: flex-start;
 }
 .title h1 {
-  font-family: "Baskerville", serif;
+  font-family: 'Baskerville', serif;
   font-size: 80px;
   font-weight: 100;
   font-style: normal;
@@ -233,7 +236,7 @@ p {
   gap: 24px;
 }
 .main .container .left .inner-text .class-features h4 {
-  font-family: "Baskerville", serif;
+  font-family: 'Baskerville', serif;
   font-size: 36px;
   font-weight: 400;
   font-style: normal;
@@ -251,7 +254,7 @@ p {
   height: 24px;
 }
 .main .container .left .inner-text .class-features .feature-icon p {
-  font-family: "Avenir", sans-serif;
+  font-family: 'Avenir', sans-serif;
   font-size: 18px;
   color: #191919;
   font-weight: 300;
@@ -272,7 +275,7 @@ p {
   gap: 24px;
 }
 .main .container .right .content-unit h4 {
-  font-family: "Baskerville", serif;
+  font-family: 'Baskerville', serif;
   font-size: 36px;
   font-weight: 400;
   font-style: normal;
@@ -280,7 +283,7 @@ p {
   margin: 0;
 }
 .main .container .right .content-unit h6 {
-  font-family: "Baskerville", serif;
+  font-family: 'Baskerville', serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 130%;
@@ -289,7 +292,7 @@ p {
   margin: 0;
 }
 .main .container .right .content-unit p {
-  font-family: "Avenir", sans-serif;
+  font-family: 'Avenir', sans-serif;
   font-size: 18px;
   color: #725a58;
 }
