@@ -22,9 +22,7 @@
   transform: translateX(-4px);
 }
 .float-social__btn {
-  transition:
-    transform 0.3s ease,
-    filter 0.3s ease;
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
 .float-social__btn--ig {
   background: #c13ed4;
@@ -38,18 +36,13 @@
 .float-social__btn--chat {
   background: #191919;
 }
-.float-social__btn--ig,
-.float-social__btn--phone,
-.float-social__btn--wa {
+.float-social__btn--ig, .float-social__btn--phone, .float-social__btn--wa {
   max-height: 0;
   opacity: 0;
   overflow: hidden;
   pointer-events: none;
   transform: translateX(48px);
-  transition:
-    max-height 0.3s ease,
-    opacity 0.3s ease,
-    transform 0.3s ease;
+  transition: max-height 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
 }
 .float-social.open .float-social__btn--ig,
 .float-social.open .float-social__btn--phone,

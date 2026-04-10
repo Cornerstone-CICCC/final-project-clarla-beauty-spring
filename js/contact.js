@@ -3,8 +3,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const serviceForm = document.querySelector('#service-form');
   const nextButton = serviceForm?.querySelector('button[type="submit"]');
   const isWeddingDetailsForm = Boolean(serviceForm?.matches('form[data-wedding-form]'));
+  const currentPath = (window.location.pathname || '').toLowerCase();
+  const isWeddingDetailsPage = currentPath.includes('contact_service-wedding.html');
 
-  if (isWeddingDetailsForm && nextButton) {
+  if (isWeddingDetailsForm && isWeddingDetailsPage && nextButton) {
     // Keep wedding details submit destination fixed regardless of bridal service toggles.
     nextButton.setAttribute('formaction', 'contact_service-wedding-booked.html');
   }
@@ -102,6 +104,10 @@ document.addEventListener('DOMContentLoaded', () => {
       link.addEventListener('click', saveFromField);
     });
 
+    if (serviceForm) {
+      serviceForm.addEventListener('submit', saveFromField);
+    }
+
     window.addEventListener('beforeunload', saveFromField);
     saveFromField();
   }
@@ -141,6 +147,10 @@ document.addEventListener('DOMContentLoaded', () => {
         input.addEventListener('input', saveContactDetails);
         input.addEventListener('change', saveContactDetails);
       });
+
+    if (serviceForm) {
+      serviceForm.addEventListener('submit', saveContactDetails);
+    }
 
     window.addEventListener('beforeunload', saveContactDetails);
     saveContactDetails();
@@ -249,6 +259,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const premiumList = document.querySelector('[data-premium-services-list]');
   const locationLine = document.querySelector('[data-booking-location-line]');
   const contactLine = document.querySelector('[data-booking-contact-line]');
+  const currentPage = (window.location.pathname || '').toLowerCase();
+  const isPartyBookedPage = currentPage.includes('contact_service-party-booked.html');
 
   if ((attendeesList || premiumList || locationLine) && storage) {
     const toServicesLabel = (makeup, hairstyle) => {
@@ -272,11 +284,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     const lines = [];
+    const primaryLabel = isPartyBookedPage ? 'Woman' : 'Groom';
+    const secondaryLabel = isPartyBookedPage ? 'Man' : 'Bridesmaid';
 
     const groomServices = toServicesLabel(saved?.groom?.makeup, saved?.groom?.hairstyle);
     const groomCount = Number.parseInt(saved?.groom?.count || '0', 10);
     if (groomServices && groomCount >= 1) {
-      lines.push(`Groom*${groomCount} (${groomServices})`);
+      lines.push(`${primaryLabel}*${groomCount} (${groomServices})`);
     }
 
     const bridesmaidServices = toServicesLabel(
@@ -285,7 +299,7 @@ document.addEventListener('DOMContentLoaded', () => {
     );
     const bridesmaidCount = Number.parseInt(saved?.bridesmaid?.count || '0', 10);
     if (bridesmaidServices && bridesmaidCount >= 1) {
-      lines.push(`Bridesmaid*${bridesmaidCount} (${bridesmaidServices})`);
+      lines.push(`${secondaryLabel}*${bridesmaidCount} (${bridesmaidServices})`);
     }
 
     const flowerGirlServices = toServicesLabel(

@@ -25,7 +25,6 @@
     <div id="navbar"></div>
 
     <!-- Title Section -->
-    <!-- Title Section -->
     <section class="title-section">
       <div class="container">
         <h2 class="section-title section-title--center">Contact</h2>
@@ -53,38 +52,35 @@
     <!-- Contact Section -->
     <section id="contact-form">
       <div class="contact-tab">
-        <a href="contact_service-wedding.html">Services</a>
-        <a href="contact_classes.html">Classes</a>
+        <a href="contact.html">Services</a>
+        <a href="contact_classes.html" id="tab-current">Classes</a>
       </div>
-      <div>
-        <!-- This section needs to link name and phone number. I don't know how to do it -->
+      <div class="greeting">
         <h3>
-          Thanks Janny,
+          Thanks <span data-booking-name>there</span>,
           <br />
           we will contact you soon!
         </h3>
-        <p>We will call +1-123-4567-890 to confirm the appointment details with you.</p>
+        <p data-booking-contact-line>
+          We will contact you to confirm the appointment details with you.
+        </p>
       </div>
 
-      <div>
+      <div class="ending">
         <img src="images/contact/booked-classes.svg" alt="booked service" />
-        <div>
-          <h5>Talk soon Janny :)</h5>
-          <div>
-            <ul>
-              <li>
-                <img src="images/icons/ph_phone.svg" alt="Phone" />
-                <p>+1 0000000000</p>
-              </li>
-              <li>
-                <img src="images/icons/ic_baseline-whatsapp.svg" alt="WhatsApp" />
-                <p>+1 0000000000</p>
-              </li>
-              <li>
-                <img src="images/icons/iconoir_instagram.svg" alt="Instagram" />
-                <p>carlabeatrizs_</p>
-              </li>
-            </ul>
+        <h5>Talk soon <span data-booking-name>there</span> :)</h5>
+        <div class="contact-list">
+          <div class="radio-row">
+            <img src="images/icons/ph_phone.svg" alt="Phone" />
+            <p>+1 0000000000</p>
+          </div>
+          <div class="radio-row">
+            <img src="images/icons/ic_baseline-whatsapp.svg" alt="WhatsApp" />
+            <p>+1 0000000000</p>
+          </div>
+          <div class="radio-row">
+            <img src="images/icons/iconoir_instagram.svg" alt="Instagram" />
+            <p>carlabeatrizs_</p>
           </div>
         </div>
       </div>
@@ -94,7 +90,7 @@
     <div id="footer"></div>
 
     <!-- Scripts -->
-    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
     <script src="js/header.js"></script>
     <script src="js/footer.js"></script>
   </body>
