@@ -1,11 +1,3 @@
-/* Error: Undefined variable.
- *    ,
- * 11 |   font-family: $font-body;
- *    |                ^^^^^^^^^^
- *    '
- *   scss\_typography.scss 11:16  @use
- *   scss\my-work.scss 2:1        root stylesheet */
-
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
       "Droid Sans Mono", monospace, monospace;

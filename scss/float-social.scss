@@ -1,8 +1,3 @@
-// ─────────────────────────────────────────────────────────
-// FLOAT-SOCIAL — standalone component styles
-// Requires the parent section to have position: relative
-// ─────────────────────────────────────────────────────────
-
 $fs-btn-size: 48px;
 $fs-ig-color: #c13ed4;
 $fs-phone-color: #6aa2ba;
@@ -20,7 +15,6 @@ $fs-speed: 0.3s;
   flex-direction: column;
   gap: 0;
 
-  // ── base button ──────────────────────────────────────
   &__btn {
     width: $fs-btn-size;
     height: $fs-btn-size;
@@ -54,7 +48,6 @@ $fs-speed: 0.3s;
     }
   }
 
-  // ── collapsed state (default) ────────────────────────
   &__btn--ig,
   &__btn--phone,
   &__btn--wa {
@@ -69,7 +62,6 @@ $fs-speed: 0.3s;
       transform $fs-speed ease;
   }
 
-  // ── expanded state ───────────────────────────────────
   &.open {
     .float-social__btn--ig,
     .float-social__btn--phone,
@@ -91,7 +83,6 @@ $fs-speed: 0.3s;
     }
   }
 
-  // ── chat icon rotates when open ──────────────────────
   &__btn--chat svg {
     transition: transform $fs-speed ease;
   }
