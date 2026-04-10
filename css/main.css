@@ -77,8 +77,7 @@
 .header .nav-links .nav-divider a:hover {
   color: var(--accent-color);
 }
-.header .nav-links .nav-divider a[aria-current='page'],
-.header .nav-links .nav-divider a.is-current {
+.header .nav-links .nav-divider a[aria-current=page], .header .nav-links .nav-divider a.is-current {
   color: var(--text-color);
   text-decoration: underline;
   text-underline-offset: 3px;
@@ -88,7 +87,7 @@
   display: inline-block;
   width: 24px;
   height: 24px;
-  background-image: url('/images/icons/iconoir_instagram.svg');
+  background-image: url("/images/icons/iconoir_instagram.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -127,7 +126,7 @@
     display: inline-block;
     width: 40px;
     height: 40px;
-    background-image: url('/images/icons/iconoir_instagram.svg');
+    background-image: url("/images/icons/iconoir_instagram.svg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -142,7 +141,7 @@
     display: inline-block;
     width: 40px;
     height: 40px;
-    background-image: url('/images/icons/hamburger.svg');
+    background-image: url("/images/icons/hamburger.svg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -152,7 +151,7 @@
     background-image: url(/images/icons/hamburger-hover.svg);
   }
   .header .nav-mobile .menu-trigger.active {
-    background-image: url('/images/icons/cross-outline.svg');
+    background-image: url("/images/icons/cross-outline.svg");
   }
   .header .nav-overlay {
     display: none;
@@ -178,8 +177,8 @@
 }
 
 @font-face {
-  font-family: 'avenir';
-  src: url('../fonts/Avenir/Avenir Light/Avenir-Light.ttf') format('truetype');
+  font-family: "avenir";
+  src: url("../fonts/Avenir/Avenir Light/Avenir-Light.ttf") format("truetype");
   font-weight: 100;
   font-style: normal;
 }
@@ -239,25 +238,25 @@
   height: 24px;
 }
 .footer .footer-content .contact-group .social-group a#phone-icon {
-  background: url('../images/icons/ph_phone.svg') no-repeat center;
+  background: url("../images/icons/ph_phone.svg") no-repeat center;
   background-size: contain;
 }
 .footer .footer-content .contact-group .social-group a#phone-icon:hover {
-  background-image: url('../images/icons/ph_phone-hover.svg');
+  background-image: url("../images/icons/ph_phone-hover.svg");
 }
 .footer .footer-content .contact-group .social-group a#whatsapp-icon {
-  background: url('../images/icons/ic_baseline-whatsapp.svg') no-repeat center;
+  background: url("../images/icons/ic_baseline-whatsapp.svg") no-repeat center;
   background-size: contain;
 }
 .footer .footer-content .contact-group .social-group a#whatsapp-icon:hover {
-  background-image: url('../images/icons/ic_baseline-whatsapp-hover.svg');
+  background-image: url("../images/icons/ic_baseline-whatsapp-hover.svg");
 }
 .footer .footer-content .contact-group .social-group a#instagram-icon {
-  background: url('../images/icons/iconoir_instagram.svg') no-repeat center;
+  background: url("../images/icons/iconoir_instagram.svg") no-repeat center;
   background-size: contain;
 }
 .footer .footer-content .contact-group .social-group a#instagram-icon:hover {
-  background-image: url('../images/icons/iconoir_instagram-hover.svg');
+  background-image: url("../images/icons/iconoir_instagram-hover.svg");
 }
 .footer .footer-content .nav-footer {
   width: 100%;
@@ -281,8 +280,7 @@
 .footer .footer-content .nav-footer a:hover {
   color: var(--accent-color);
 }
-.footer .footer-content .nav-footer a[aria-current='page'],
-.footer .footer-content .nav-footer a.is-current {
+.footer .footer-content .nav-footer a[aria-current=page], .footer .footer-content .nav-footer a.is-current {
   color: var(--text-color);
   text-decoration: underline;
   text-underline-offset: 3px;
@@ -312,13 +310,13 @@
 }
 
 @font-face {
-  font-family: 'Baskerville';
-  src: local('Baskerville'), local('Baskerville Regular');
+  font-family: "Baskerville";
+  src: local("Baskerville"), local("Baskerville Regular");
   font-style: normal;
   font-weight: 400;
 }
 body {
-  font-family: 'Avenir', sans-serif;
+  font-family: "Avenir", sans-serif;
   color: #535353;
   background-color: #f8f6f4;
   line-height: 1.6;
@@ -332,7 +330,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Baskerville', serif;
+  font-family: "Baskerville", serif;
   font-style: normal;
 }
 
@@ -376,13 +374,13 @@ p {
 }
 
 .section-title {
-  font-family: 'Baskerville', serif;
+  font-family: "Baskerville", serif;
   color: #5e4a49;
   text-transform: uppercase;
 }
 
 .section-description {
-  font-family: 'Avenir', sans-serif;
+  font-family: "Avenir", sans-serif;
   color: #888888;
   margin: 0;
 }
@@ -430,12 +428,12 @@ body {
   margin: 0;
   white-space: nowrap;
 }
-#contact-form input[type='text'],
-#contact-form input[type='email'],
-#contact-form input[type='tel'],
-#contact-form input[type='date'],
-#contact-form input[type='time'] {
-  font-family: 'Avenir', sans-serif;
+#contact-form input[type=text],
+#contact-form input[type=email],
+#contact-form input[type=tel],
+#contact-form input[type=date],
+#contact-form input[type=time] {
+  font-family: "Avenir", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 100;
@@ -450,8 +448,8 @@ body {
   border: 0.8px solid #b99692;
   color: #535353;
 }
-#contact-form input[type='date'],
-#contact-form input[type='time'] {
+#contact-form input[type=date],
+#contact-form input[type=time] {
   min-height: 52px;
   padding: 16px 12px;
   position: relative;
@@ -459,8 +457,8 @@ body {
   -webkit-appearance: none;
   color-scheme: light;
 }
-#contact-form input[type='date']::-webkit-calendar-picker-indicator,
-#contact-form input[type='time']::-webkit-calendar-picker-indicator {
+#contact-form input[type=date]::-webkit-calendar-picker-indicator,
+#contact-form input[type=time]::-webkit-calendar-picker-indicator {
   position: absolute;
   left: auto;
   right: 12px;
@@ -470,16 +468,16 @@ body {
   height: 24px;
   filter: invert(63%) sepia(13%) saturate(463%) hue-rotate(316deg) brightness(88%) contrast(85%);
 }
-#contact-form input[type='date']:focus,
-#contact-form input[type='time']:focus {
+#contact-form input[type=date]:focus,
+#contact-form input[type=time]:focus {
   outline: none;
   border-color: #725a58;
 }
-#contact-form input[type='date']:invalid,
-#contact-form input[type='time']:invalid {
+#contact-form input[type=date]:invalid,
+#contact-form input[type=time]:invalid {
   color: #888888;
 }
-#contact-form input[type='radio'] {
+#contact-form input[type=radio] {
   appearance: none;
   -webkit-appearance: none;
   width: 20px;
@@ -491,8 +489,8 @@ body {
   place-content: center;
   cursor: pointer;
 }
-#contact-form input[type='radio']::before {
-  content: '';
+#contact-form input[type=radio]::before {
+  content: "";
   width: 14px;
   height: 14px;
   border-radius: 50%;
@@ -500,19 +498,19 @@ body {
   transition: 120ms transform ease-in-out;
   box-shadow: inset 1em 1em #b99692;
 }
-#contact-form input[type='radio']:checked::before {
+#contact-form input[type=radio]:checked::before {
   transform: scale(1);
 }
-#contact-form input[type='tel'],
-#contact-form input[type='email'] {
+#contact-form input[type=tel],
+#contact-form input[type=email] {
   display: none;
   grid-column: 1/-1;
 }
-#contact-form input[type='radio']:checked + label + input[type='tel'],
-#contact-form input[type='radio']:checked + label + input[type='email'] {
+#contact-form input[type=radio]:checked + label + input[type=tel],
+#contact-form input[type=radio]:checked + label + input[type=email] {
   display: flex;
 }
-#contact-form input[type='checkbox'] {
+#contact-form input[type=checkbox] {
   width: 22px;
   height: 22px;
   appearance: none;
@@ -525,19 +523,19 @@ body {
   place-content: center;
   transition: all 0.2s ease;
 }
-#contact-form input[type='checkbox']::before {
-  content: '';
+#contact-form input[type=checkbox]::before {
+  content: "";
   width: 12px;
   height: 12px;
   transform: scale(0);
   background-color: #fbfafa;
   clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0, 43% 62%);
 }
-#contact-form input[type='checkbox']:checked {
+#contact-form input[type=checkbox]:checked {
   background-color: #b99692;
   border-color: #b99692;
 }
-#contact-form input[type='checkbox']:checked::before {
+#contact-form input[type=checkbox]:checked::before {
   transform: scale(1);
 }
 #contact-form .contact-tab {
@@ -552,7 +550,7 @@ body {
   align-items: center;
   gap: 11px;
   flex: 1 0 0;
-  font-family: 'Baskerville', serif;
+  font-family: "Baskerville", serif;
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
@@ -581,7 +579,7 @@ body {
   align-self: stretch;
 }
 #contact-form #service-form .service-form-item h5 {
-  font-family: 'Baskerville', serif;
+  font-family: "Baskerville", serif;
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
@@ -595,8 +593,8 @@ body {
   gap: 8px;
   width: 100%;
 }
-#contact-form #service-form .service-form-item .service-form-item-options input[type='button'] {
-  font-family: 'Baskerville', serif;
+#contact-form #service-form .service-form-item .service-form-item-options input[type=button] {
+  font-family: "Baskerville", serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -623,24 +621,16 @@ body {
   overflow-wrap: anywhere;
   text-align: left;
 }
-#contact-form
-  #service-form
-  .service-form-item
-  .service-form-item-options
-  input[type='button']:hover {
+#contact-form #service-form .service-form-item .service-form-item-options input[type=button]:hover {
   background-color: #725a58;
   color: #fbfafa;
   border-color: #b99692;
 }
-#contact-form
-  #service-form
-  .service-form-item
-  .service-form-item-options
-  input[type='button'].is-selected {
+#contact-form #service-form .service-form-item .service-form-item-options input[type=button].is-selected {
   background-color: #fbfafa;
   color: #191919;
   border-color: #b99692;
-  background-image: url('../images/icons/tick-circle-solid.svg');
+  background-image: url("../images/icons/tick-circle-solid.svg");
 }
 #contact-form #service-form .service-form-item#contactOption {
   display: flex;
@@ -676,7 +666,7 @@ body {
   width: 100%;
 }
 #contact-form .radio-row label {
-  font-family: 'Avenir', sans-serif;
+  font-family: "Avenir", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 100;
@@ -711,7 +701,7 @@ body {
 }
 #contact-form .anyone-service .anyone-service-count label {
   min-width: 100px;
-  font-family: 'Baskerville', serif;
+  font-family: "Baskerville", serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -735,8 +725,8 @@ body {
   background-color: #fae9e7;
   width: 94px;
 }
-#contact-form .input-number-group input[type='number']::-webkit-inner-spin-button,
-#contact-form .input-number-group input[type='number']::-webkit-outer-spin-button {
+#contact-form .input-number-group input[type=number]::-webkit-inner-spin-button,
+#contact-form .input-number-group input[type=number]::-webkit-outer-spin-button {
   appearance: none;
 }
 #contact-form .input-number-group .input-group-button {
@@ -748,7 +738,7 @@ body {
   width: 80px;
   padding: 0;
   text-align: center;
-  font-family: 'Avenir', sans-serif;
+  font-family: "Avenir", sans-serif;
   width: 100%;
 }
 #contact-form .input-number-group .input-number > div {
@@ -782,7 +772,7 @@ body {
   background-color: transparent;
   color: #535353;
   text-align: center;
-  font-family: 'Baskerville', serif;
+  font-family: "Baskerville", serif;
   cursor: pointer;
   font-size: 24px;
   font-weight: 400;
@@ -799,14 +789,14 @@ body {
   padding: 12px;
   border: none;
   background-color: #fbfafa;
-  font-family: 'Avenir', sans-serif;
+  font-family: "Avenir", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 100;
   line-height: 150%;
 }
 #contact-form #anything-else::placeholder {
-  font-family: 'Avenir', sans-serif;
+  font-family: "Avenir", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -875,7 +865,7 @@ body {
   padding-left: 0;
 }
 .frame li::before {
-  content: '- ';
+  content: "- ";
 }
 .frame h6 {
   margin: 0;
@@ -934,58 +924,13 @@ body {
   color: inherit;
 }
 
-.ending {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  gap: 24px;
-}
-.ending > img {
-  width: 100%;
-  max-width: none;
-  height: auto;
-  object-fit: cover;
-  display: block;
-}
-.ending h5 {
-  font-family: 'Baskerville', serif;
-  font-size: 28px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 130%;
-  color: #725a58;
-  width: 100%;
-  margin: 0;
-}
-.ending .contact-list {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  justify-content: flex-start;
-  gap: 12px;
-}
-.ending .contact-list .radio-row {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 8px;
-}
-.ending .contact-list .radio-row p {
-  margin: 0;
-  color: #725a58;
-}
-
 .breadcrumb {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 8px;
   width: 100%;
-  font-family: 'Avenir', sans-serif;
+  font-family: "Avenir", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 100;
@@ -1043,7 +988,7 @@ body {
     flex-direction: column;
     align-items: stretch;
   }
-  #contact-form #service-form .service-form-item .service-form-item-options input[type='button'] {
+  #contact-form #service-form .service-form-item .service-form-item-options input[type=button] {
     width: 100%;
   }
   #contact-form .two-column {
@@ -1079,12 +1024,6 @@ body {
     flex-direction: column;
     gap: 20px;
   }
-  .frame .share-section.two-column {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    gap: 24px;
-  }
 }
 @media (max-width: 480px) {
   .share-section {
@@ -1115,6 +1054,51 @@ body {
     display: none;
   }
 }
+.ending {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 24px;
+}
+.ending > img {
+  width: 100%;
+  max-width: none;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+.ending h5 {
+  font-family: "Baskerville", serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  color: #725a58;
+  width: 100%;
+  margin: 0;
+}
+.ending .contact-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  gap: 12px;
+}
+.ending .contact-list .radio-row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+}
+.ending .contact-list .radio-row p {
+  margin: 0;
+  color: #725a58;
+}
+
 :root {
   --text-color: #725a58;
   --bg-color: #f8f6f4;
@@ -1125,8 +1109,8 @@ body {
 }
 
 @font-face {
-  font-family: 'avenir';
-  src: url('../fonts/Avenir/Avenir Light/Avenir-Light.ttf') format('truetype');
+  font-family: "avenir";
+  src: url("../fonts/Avenir/Avenir Light/Avenir-Light.ttf") format("truetype");
   font-weight: 100;
   font-style: normal;
 }
@@ -1169,13 +1153,13 @@ body {
   border: none;
   padding: 0;
   background-color: transparent;
-  background: url('../images/icons/cross-outline.svg') no-repeat center;
+  background: url("../images/icons/cross-outline.svg") no-repeat center;
   background-size: contain;
   cursor: pointer;
   z-index: 10000;
 }
 .mobile-menu .container .check-btn:hover {
-  background-image: url('../images/icons/close-hover.svg');
+  background-image: url("../images/icons/close-hover.svg");
 }
 .mobile-menu .container .mobile-logo {
   width: 100px;
@@ -1213,25 +1197,25 @@ body {
   height: 24px;
 }
 .mobile-menu .container .social-group a#phone-icon {
-  background: url('../images/icons/ph_phone.svg') no-repeat center;
+  background: url("../images/icons/ph_phone.svg") no-repeat center;
   background-size: contain;
 }
 .mobile-menu .container .social-group a#phone-icon:hover {
-  background-image: url('../images/icons/ph_phone-hover.svg');
+  background-image: url("../images/icons/ph_phone-hover.svg");
 }
 .mobile-menu .container .social-group a#whatsapp-icon {
-  background: url('../images/icons/ic_baseline-whatsapp.svg') no-repeat center;
+  background: url("../images/icons/ic_baseline-whatsapp.svg") no-repeat center;
   background-size: contain;
 }
 .mobile-menu .container .social-group a#whatsapp-icon:hover {
-  background-image: url('../images/icons/ic_baseline-whatsapp-hover.svg');
+  background-image: url("../images/icons/ic_baseline-whatsapp-hover.svg");
 }
 .mobile-menu .container .social-group a#instagram-icon {
-  background: url('../images/icons/iconoir_instagram.svg') no-repeat center;
+  background: url("../images/icons/iconoir_instagram.svg") no-repeat center;
   background-size: contain;
 }
 .mobile-menu .container .social-group a#instagram-icon:hover {
-  background-image: url('../images/icons/iconoir_instagram-hover.svg');
+  background-image: url("../images/icons/iconoir_instagram-hover.svg");
 }
 .mobile-menu .container .footer-tagline {
   font-family: var(--font-body);
@@ -1248,13 +1232,13 @@ body {
 }
 
 @font-face {
-  font-family: 'Baskerville';
-  src: local('Baskerville'), local('Baskerville Regular');
+  font-family: "Baskerville";
+  src: local("Baskerville"), local("Baskerville Regular");
   font-style: normal;
   font-weight: 400;
 }
 body {
-  font-family: 'Avenir', sans-serif;
+  font-family: "Avenir", sans-serif;
   color: #535353;
   background-color: #f8f6f4;
   line-height: 1.6;
@@ -1268,7 +1252,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Baskerville', serif;
+  font-family: "Baskerville", serif;
   font-style: normal;
 }
 
@@ -1312,13 +1296,13 @@ p {
 }
 
 .section-title {
-  font-family: 'Baskerville', serif;
+  font-family: "Baskerville", serif;
   color: #5e4a49;
   text-transform: uppercase;
 }
 
 .section-description {
-  font-family: 'Avenir', sans-serif;
+  font-family: "Avenir", sans-serif;
   color: #888888;
   margin: 0;
 }
@@ -1331,13 +1315,13 @@ p {
 }
 
 @font-face {
-  font-family: 'Baskerville';
-  src: local('Baskerville'), local('Baskerville Regular');
+  font-family: "Baskerville";
+  src: local("Baskerville"), local("Baskerville Regular");
   font-style: normal;
   font-weight: 400;
 }
 body {
-  font-family: 'Avenir', sans-serif;
+  font-family: "Avenir", sans-serif;
   color: #535353;
   background-color: #f8f6f4;
   line-height: 1.6;
@@ -1351,7 +1335,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Baskerville', serif;
+  font-family: "Baskerville", serif;
   font-style: normal;
 }
 
@@ -1395,13 +1379,13 @@ p {
 }
 
 .section-title {
-  font-family: 'Baskerville', serif;
+  font-family: "Baskerville", serif;
   color: #5e4a49;
   text-transform: uppercase;
 }
 
 .section-description {
-  font-family: 'Avenir', sans-serif;
+  font-family: "Avenir", sans-serif;
   color: #888888;
   margin: 0;
 }
@@ -1420,7 +1404,7 @@ button {
 }
 
 .btn {
-  font-family: 'Baskerville', serif;
+  font-family: "Baskerville", serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -1483,13 +1467,13 @@ button {
 }
 
 @font-face {
-  font-family: 'Baskerville';
-  src: local('Baskerville'), local('Baskerville Regular');
+  font-family: "Baskerville";
+  src: local("Baskerville"), local("Baskerville Regular");
   font-style: normal;
   font-weight: 400;
 }
 body {
-  font-family: 'Avenir', sans-serif;
+  font-family: "Avenir", sans-serif;
   color: #535353;
   background-color: #f8f6f4;
   line-height: 1.6;
@@ -1503,7 +1487,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Baskerville', serif;
+  font-family: "Baskerville", serif;
   font-style: normal;
 }
 
@@ -1547,13 +1531,13 @@ p {
 }
 
 .section-title {
-  font-family: 'Baskerville', serif;
+  font-family: "Baskerville", serif;
   color: #5e4a49;
   text-transform: uppercase;
 }
 
 .section-description {
-  font-family: 'Avenir', sans-serif;
+  font-family: "Avenir", sans-serif;
   color: #888888;
   margin: 0;
 }
@@ -1600,7 +1584,7 @@ p {
   height: 500px;
 }
 .class-unit .class-details h4 {
-  font-family: 'Baskerville', serif;
+  font-family: "Baskerville", serif;
   font-size: 36px;
   font-weight: 400;
   font-style: normal;
@@ -1624,7 +1608,7 @@ p {
   height: 24px;
 }
 .class-unit .class-details .class-features .feature-icon p {
-  font-family: 'Avenir', sans-serif;
+  font-family: "Avenir", sans-serif;
   font-size: 16px;
   color: #191919;
   font-weight: 100;
@@ -1636,7 +1620,7 @@ p {
   gap: 24px;
 }
 .class-unit .class-details .inner-content h6 {
-  font-family: 'Baskerville', serif;
+  font-family: "Baskerville", serif;
   font-size: 24px;
   font-weight: 400;
   font-style: normal;
@@ -1644,7 +1628,7 @@ p {
   margin: 0;
 }
 .class-unit .class-details .inner-content p {
-  font-family: 'Avenir', sans-serif;
+  font-family: "Avenir", sans-serif;
   font-size: 16px;
   color: #725a58;
 }
@@ -1661,7 +1645,7 @@ p {
   align-self: flex-start;
 }
 .title h1 {
-  font-family: 'Baskerville', serif;
+  font-family: "Baskerville", serif;
   font-size: 80px;
   font-weight: 100;
   font-style: normal;
@@ -1717,7 +1701,7 @@ p {
   gap: 24px;
 }
 .main .container .left .inner-text .class-features h4 {
-  font-family: 'Baskerville', serif;
+  font-family: "Baskerville", serif;
   font-size: 36px;
   font-weight: 400;
   font-style: normal;
@@ -1735,7 +1719,7 @@ p {
   height: 24px;
 }
 .main .container .left .inner-text .class-features .feature-icon p {
-  font-family: 'Avenir', sans-serif;
+  font-family: "Avenir", sans-serif;
   font-size: 18px;
   color: #191919;
   font-weight: 300;
@@ -1756,7 +1740,7 @@ p {
   gap: 24px;
 }
 .main .container .right .content-unit h4 {
-  font-family: 'Baskerville', serif;
+  font-family: "Baskerville", serif;
   font-size: 36px;
   font-weight: 400;
   font-style: normal;
@@ -1764,7 +1748,7 @@ p {
   margin: 0;
 }
 .main .container .right .content-unit h6 {
-  font-family: 'Baskerville', serif;
+  font-family: "Baskerville", serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 130%;
@@ -1773,7 +1757,7 @@ p {
   margin: 0;
 }
 .main .container .right .content-unit p {
-  font-family: 'Avenir', sans-serif;
+  font-family: "Avenir", sans-serif;
   font-size: 18px;
   color: #725a58;
 }
@@ -1858,6 +1842,278 @@ p {
   .main .container .right .content-unit {
     width: 100%;
     max-width: none;
+  }
+}
+@font-face {
+  font-family: "Baskerville";
+  src: local("Baskerville"), local("Baskerville Regular");
+  font-style: normal;
+  font-weight: 400;
+}
+body {
+  font-family: "Avenir", sans-serif;
+  color: #535353;
+  background-color: #f8f6f4;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Baskerville", serif;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 80px;
+  line-height: 130%;
+}
+
+h2 {
+  font-size: 68px;
+  line-height: 100%;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 48px;
+  line-height: 130%;
+  font-weight: 100;
+}
+
+h4 {
+  font-size: 36px;
+  line-height: 120%;
+}
+
+h5 {
+  font-size: 32px;
+  line-height: 130%;
+}
+
+h6 {
+  font-size: 24px;
+  line-height: 130%;
+}
+
+/* Paragraph */
+p {
+  font-size: 18px;
+  line-height: 150%;
+  color: #535353;
+}
+
+.section-title {
+  font-family: "Baskerville", serif;
+  color: #5e4a49;
+  text-transform: uppercase;
+}
+
+.section-description {
+  font-family: "Avenir", sans-serif;
+  color: #888888;
+  margin: 0;
+}
+
+.section-divider {
+  width: 200px;
+  height: 1px;
+  background-color: #e3b6b1;
+  border: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.title-about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+}
+.title-about .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+}
+.title-about .container h3 {
+  font-family: "Baskerville", serif;
+  font-size: 48px;
+  line-height: 130%;
+  font-weight: 100;
+  color: #e3b6b1;
+  text-align: center;
+  margin: 0;
+}
+.title-about .container h1 {
+  font-family: "Baskerville", serif;
+  font-size: 80px;
+  line-height: 130%;
+  font-weight: 100;
+  color: #725a58;
+  margin: 0;
+}
+
+.about-section {
+  background-color: #fae9e7;
+  padding: 135px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 32px;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+.about-section .about-container {
+  max-width: 1024px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 32px;
+}
+.about-section > img {
+  display: flex;
+  width: 351px;
+  height: 424px;
+}
+.about-section .about-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 32px;
+}
+.about-section .about-text h3 {
+  font-family: "Baskerville", serif;
+  font-size: 36px;
+  font-weight: 400;
+  font-style: normal;
+  color: #725a58;
+  margin: 0;
+}
+.about-section .about-text h6 {
+  font-family: "Baskerville", serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 130%;
+  font-style: normal;
+  color: #191919;
+  margin: 0;
+}
+
+.brands {
+  display: inline-flex;
+  height: 358px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 44px;
+  background: #f8f6f4;
+  color: #725a58;
+}
+.brands__inner {
+  display: inline-flex;
+  height: 358px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 44px;
+}
+.brands__logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px 60px;
+}
+.brands__logo {
+  width: 160px;
+  height: auto;
+  object-fit: contain;
+  filter: grayscale(1) opacity(0.55);
+  transition: filter 0.3s;
+}
+
+@media (max-width: 768px) {
+  .title-about {
+    flex-direction: column;
+    gap: 4px;
+    text-align: center;
+  }
+  .title-about h3 {
+    font-size: 36px;
+    line-height: 120%;
+  }
+  .title-about h1 {
+    font-size: 56px;
+    line-height: 120%;
+    text-align: center;
+  }
+  .about-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    padding: 40px 20px;
+  }
+  .about-section .about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    width: 100%;
+  }
+  .about-section > img {
+    width: 100%;
+    max-width: 351px;
+    height: auto;
+  }
+  .about-section .about-text {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    gap: 24px;
+  }
+  .about-section .about-text h3 {
+    font-size: 32px;
+  }
+  .brands {
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 40px 20px;
+    gap: 28px;
+  }
+  .brands__inner {
+    display: flex;
+    width: 100%;
+    height: auto;
+    gap: 28px;
+  }
+  .brands__logos {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    gap: 50px;
+  }
+  .brands__logos br {
+    display: none;
   }
 }
 
