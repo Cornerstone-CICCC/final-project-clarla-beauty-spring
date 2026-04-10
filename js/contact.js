@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+  // Cache key DOM references and current-page flags used across the form flow.
   const eventTypeButtons = document.querySelectorAll('#eventType .event-type-btn');
   const serviceForm = document.querySelector('#service-form');
   const nextButton = serviceForm?.querySelector('button[type="submit"]');
@@ -6,11 +7,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const currentPath = (window.location.pathname || '').toLowerCase();
   const isWeddingDetailsPage = currentPath.includes('contact_service-wedding.html');
 
+  // On wedding details page, force submit to booked confirmation page.
   if (isWeddingDetailsForm && isWeddingDetailsPage && nextButton) {
     // Keep wedding details submit destination fixed regardless of bridal service toggles.
     nextButton.setAttribute('formaction', 'contact_service-wedding-booked.html');
   }
 
+  // Update submit target based on selected event type on the main services form.
   const updateNextButtonAction = () => {
     if (!nextButton) {
       return;
@@ -26,6 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
     nextButton.setAttribute('formaction', target);
   };
 
+  // Handle service-type button behavior for both single-select and multi-select groups.
   if (eventTypeButtons.length > 0) {
     const eventValues = Array.from(eventTypeButtons).map((button) =>
       (button.value || '').trim().toLowerCase()
@@ -39,6 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let hasSelectedButton = false;
 
     eventTypeButtons.forEach((button, index) => {
+      // Ensure at least one button starts selected in single-select groups.
       const shouldSelect =
         button.classList.contains('is-selected') || (!hasSelectedButton && index === 0);
 
@@ -49,6 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       button.addEventListener('click', () => {
         if (isMainServicePicker) {
+          // Main picker behaves like tabs: keep only one option selected.
           eventTypeButtons.forEach((item) => item.classList.remove('is-selected'));
           button.classList.add('is-selected');
           updateNextButtonAction();
@@ -65,6 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
+  // Guard localStorage access (can fail in private mode or strict browser settings).
   const getStorage = () => {
     try {
       const testKey = '__booking_name_test__';
@@ -78,6 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const storage = getStorage();
 
+  // Persist/remove visitor name used later on confirmation pages.
   const saveBookingName = (value) => {
     if (!storage) {
       return;
@@ -94,6 +102,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const nameInput = document.querySelector('input#name[name="name"]');
 
+  // Save the name during input, navigation, submit, and unload to avoid data loss.
   if (nameInput) {
     const saveFromField = () => saveBookingName(nameInput.value);
 
@@ -112,6 +121,7 @@ document.addEventListener('DOMContentLoaded', () => {
     saveFromField();
   }
 
+  // Track selected contact method and corresponding entered value.
   const contactMethodInputs = document.querySelectorAll('input[name="contactMethod"]');
 
   if (contactMethodInputs.length > 0 && storage) {
@@ -122,6 +132,7 @@ document.addEventListener('DOMContentLoaded', () => {
       email: document.querySelector('#email-address'),
     };
 
+    // Save contact payload as JSON so booked pages can render a single summary line.
     const saveContactDetails = () => {
       const selectedMethod =
         document.querySelector('input[name="contactMethod"]:checked')?.value || '';
@@ -156,6 +167,7 @@ document.addEventListener('DOMContentLoaded', () => {
     saveContactDetails();
   }
 
+  // Inject visitor name into any placeholder element marked with data-booking-name.
   const bookingNameTargets = document.querySelectorAll('[data-booking-name]');
 
   if (bookingNameTargets.length > 0 && storage) {
@@ -166,6 +178,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // Collect wedding-details fields used to build attendee and service summaries.
   const weddingFields = {
     form: document.querySelector('form[data-wedding-form]'),
     eventLocation: document.querySelector('#event-location'),
@@ -194,6 +207,7 @@ document.addEventListener('DOMContentLoaded', () => {
     'gommage',
   ];
 
+  // Resolve premium checkbox inputs by id and combine with all wedding form inputs.
   const premiumServiceInputs = premiumServiceIds
     .map((id) => document.querySelector(`#${id}`))
     .filter(Boolean);
@@ -201,11 +215,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const weddingInputs = [...Object.values(weddingFields), ...premiumServiceInputs].filter(Boolean);
 
   if (weddingInputs.length > 0 && storage) {
+    // Normalize count inputs to non-negative integers.
     const getCount = (input) => {
       const parsed = Number.parseInt(input?.value || '0', 10);
       return Number.isNaN(parsed) ? 0 : Math.max(parsed, 0);
     };
 
+    // Save all wedding detail selections so booked pages can render complete recap.
     const saveWeddingAttendees = () => {
       const premiumServices = Array.from(
         document.querySelectorAll('input[type="checkbox"][id]:checked')
@@ -255,6 +271,7 @@ document.addEventListener('DOMContentLoaded', () => {
     saveWeddingAttendees();
   }
 
+  // Read stored recap data and render attendee/services/location on booked pages.
   const attendeesList = document.querySelector('[data-additional-attendees-list]');
   const premiumList = document.querySelector('[data-premium-services-list]');
   const locationLine = document.querySelector('[data-booking-location-line]');
@@ -263,6 +280,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const isPartyBookedPage = currentPage.includes('contact_service-party-booked.html');
 
   if ((attendeesList || premiumList || locationLine) && storage) {
+    // Build compact service labels like "makeup+hairstyle".
     const toServicesLabel = (makeup, hairstyle) => {
       const services = [];
 
@@ -278,6 +296,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let saved = null;
     try {
+      // Parse persisted attendee payload; gracefully ignore malformed data.
       saved = JSON.parse(storage.getItem('weddingAttendees') || 'null');
     } catch (error) {
       saved = null;
@@ -312,6 +331,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     if (lines.length > 0) {
+      // Render attendee summary rows.
       attendeesList.innerHTML = lines.map((line) => `<li>${line}</li>`).join('');
     }
 
@@ -323,7 +343,8 @@ document.addEventListener('DOMContentLoaded', () => {
       premiumList.innerHTML =
         premiumServices.length > 0
           ? premiumServices.map((service) => `<li>${service}</li>`).join('')
-          : '<li>None selected</li>';
+          : // Keep UI explicit when no add-ons were selected.
+            '<li>None selected</li>';
     }
 
     if (locationLine) {
@@ -337,6 +358,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
+  // Render preferred confirmation channel on booked pages.
   if (contactLine && storage) {
     let savedContact = null;
     try {
@@ -362,6 +384,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
+// Shared click handler for +/- controls used by numeric attendee counters.
 document.addEventListener('click', (event) => {
   const incrementBtn = event.target.closest('.input-number-increment');
   const decrementBtn = event.target.closest('.input-number-decrement');
@@ -384,6 +407,7 @@ document.addEventListener('click', (event) => {
   const minValue = Number.isNaN(min) ? 0 : min;
   const maxValue = Number.isNaN(max) ? 5 : max;
 
+  // Increase/decrease within input min/max constraints.
   if (incrementBtn) {
     input.value = String(Math.min(safeValue + 1, maxValue));
   }
@@ -392,6 +416,7 @@ document.addEventListener('click', (event) => {
     input.value = String(Math.max(safeValue - 1, minValue));
   }
 
+  // Trigger listeners that persist form state after value changes.
   input.dispatchEvent(new Event('input', { bubbles: true }));
   input.dispatchEvent(new Event('change', { bubbles: true }));
 });
