@@ -8,8 +8,8 @@
 }
 
 @font-face {
-  font-family: "avenir";
-  src: url("../fonts/Avenir/Avenir Light/Avenir-Light.ttf") format("truetype");
+  font-family: 'Avenir';
+  src: url('../fonts/Avenir/Avenir Light/Avenir Light.ttf') format('truetype');
   font-weight: 100;
   font-style: normal;
 }
@@ -48,6 +48,10 @@
 .footer .footer-content .contact-group .footer-logo {
   width: 126px;
   height: auto;
+<<<<<<< HEAD
+=======
+  -o-object-fit: contain;
+>>>>>>> origin
   object-fit: contain;
 }
 .footer .footer-content .contact-group .footer-tagline {
@@ -69,25 +73,25 @@
   height: 24px;
 }
 .footer .footer-content .contact-group .social-group a#phone-icon {
-  background: url("../images/icons/ph_phone.svg") no-repeat center;
+  background: url('../images/icons/ph_phone.svg') no-repeat center;
   background-size: contain;
 }
 .footer .footer-content .contact-group .social-group a#phone-icon:hover {
-  background-image: url("../images/icons/ph_phone-hover.svg");
+  background-image: url('../images/icons/ph_phone-hover.svg');
 }
 .footer .footer-content .contact-group .social-group a#whatsapp-icon {
-  background: url("../images/icons/ic_baseline-whatsapp.svg") no-repeat center;
+  background: url('../images/icons/ic_baseline-whatsapp.svg') no-repeat center;
   background-size: contain;
 }
 .footer .footer-content .contact-group .social-group a#whatsapp-icon:hover {
-  background-image: url("../images/icons/ic_baseline-whatsapp-hover.svg");
+  background-image: url('../images/icons/ic_baseline-whatsapp-hover.svg');
 }
 .footer .footer-content .contact-group .social-group a#instagram-icon {
-  background: url("../images/icons/iconoir_instagram.svg") no-repeat center;
+  background: url('../images/icons/iconoir_instagram.svg') no-repeat center;
   background-size: contain;
 }
 .footer .footer-content .contact-group .social-group a#instagram-icon:hover {
-  background-image: url("../images/icons/iconoir_instagram-hover.svg");
+  background-image: url('../images/icons/iconoir_instagram-hover.svg');
 }
 .footer .footer-content .nav-footer {
   width: 100%;
@@ -111,7 +115,8 @@
 .footer .footer-content .nav-footer a:hover {
   color: var(--accent-color);
 }
-.footer .footer-content .nav-footer a[aria-current=page], .footer .footer-content .nav-footer a.is-current {
+.footer .footer-content .nav-footer a[aria-current='page'],
+.footer .footer-content .nav-footer a.is-current {
   color: var(--text-color);
   text-decoration: underline;
   text-underline-offset: 3px;
@@ -138,6 +143,10 @@
     gap: 10px 16px;
     justify-items: center;
   }
+<<<<<<< HEAD
 }
 
 /*# sourceMappingURL=footer.css.map */
+=======
+} /*# sourceMappingURL=footer.css.map */
+>>>>>>> origin

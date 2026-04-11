@@ -6,14 +6,15 @@
   <title>Carla Beauty — Expert Makeup &amp; Hairstyle Studio</title>
   <meta name="description" content="Vancouver's go-to makeup and hairstyle studio with a Brazilian twist. Weddings, parties, photoshoots, and beauty classes." />
 
-  <!-- Google Fonts -->
+  <!-- Google Fonts
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Pinyon+Script&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet" />
-
+-->
   <!-- Main styles (compiled from scss/styles.scss) -->
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="css/float-social.css" />
+  
   <!--<link rel="stylesheet" href="css/main.css" />  It's over-writing styles.css-->
 
   <!-- Header + Footer styles -->
@@ -65,8 +66,8 @@
           <h2 class="about__heading">Professional Makeup &amp;&nbsp;Hairstyle Artist</h2>
           <p class="about__desc">10+ years creating stunning looks for weddings and special occasions.</p>
           <div style="display: flex; align-items: center; gap: 16px;">
-          <a href="#contact" class="btn btn--primary">About Me</a>
-          <h1>Carla Beatriz</h1>
+          <a href="about.html" class="btn btn--primary">About Me</a>
+          <h1 class="about__name">Carla Beatriz</h1>
           </div>
         </div>
       </div>
@@ -86,7 +87,7 @@
           <img src="images/homepage/brand3.png" alt="Inglot" class="brands__logo" />
           <img src="images/homepage/brand4.png" alt="Laura Mercier" class="brands__logo" />
         </div>
-        <div class="brands__logos"><br><br><br><br>
+        <div class="brands__logos">
           <img src="images/homepage/brand5.png" alt="Tarte" class="brands__logo" />
           <img src="images/homepage/brand6.png" alt="Kryolan" class="brands__logo" />
           <img src="images/homepage/brand7.png" alt="Brand" class="brands__logo" />
@@ -102,7 +103,7 @@
         <div class="star__line"></div>
         <p class="star__desc">Shine effortlessly, embrace your unique features with absolute confidence.</p>
         <br>
-        <a href="my-work.html" class="btn btn--primary">My Work</a>
+        <a href="my-work_makeup.html" class="btn btn--primary">My Work</a>
       </div>
       <div class="gallery">
         <div class="gallery__item">
@@ -184,7 +185,7 @@
   <div class="classes__text">
     <ul class="classes__list">
   <li>
-    <a href="classes_beginner-class.html" class="classes__list-row">
+    <a href="classes_master-class.html" class="classes__list-row">
       <div class="classes__list-content">
         <div class="classes__list-title">
           <img src="images/homepage/badge.png" alt="badge" class="classes__badge" />
@@ -220,7 +221,7 @@
     </a>
   </li>
 </ul>
-    <a href="classes.html" class="btn btn--primary">All Classes</a>
+    <a href="classes_overview.html" class="btn btn--primary">All Classes</a>
   </div>
 
   <div class="classes__images">
@@ -264,15 +265,15 @@
   </div>
 </section>  
     <!-- CONTACT -->
-    
+<section id="contact">
       <div class="star__text-wrap">
           <h2 class="star__heading">LET'S TALK</h2>
           <div class="star__line"></div>
           <p class="star__desc">Check availability, pricing, and schedule a meeting for your special day or our academy services.</p>
       
 
-      <!--ADD CONTACT FORM HERE -->
-       <!-- Contact Section -->
+  
+       <!-- Contact Section FORM-->
     <section id="contact-form">
       <div class="contact-tab">
         <a id="tab-current" href="contact_service-wedding.html">Services</a>
@@ -370,7 +371,7 @@
         </div>
       </form>
     </section>
-
+  </section>
   </main>
   <!--FOOTER-->
   <div id="footer"></div>
@@ -381,10 +382,19 @@
       .then(html => { document.getElementById("footer").innerHTML = html; });
   </script>
   
+    <!-- Contact Form CSS -->
+  <script>
+    const link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = 'css/contact-form.css';
+    document.head.appendChild(link);
+  </script>
+  
   <!-- Main JS -->
   <script src="js/header.js"></script> 
   <script src="js/float-social.js"></script> 
   <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
 </body>
 
 </html>
