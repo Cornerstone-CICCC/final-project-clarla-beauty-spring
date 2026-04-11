@@ -3,6 +3,7 @@
 ## Authors
 
 Joy, Pam, Patrick
+(See how we work [HERE] !(https://springprojectjpp.netlify.app))
 
 **Vancouver's go-to makeup and hairstyle studio, with a Brazilian twist.**  
 Built with vanilla HTML, CSS, SCSS and JavaScript. No frameworks, no build tools required.
